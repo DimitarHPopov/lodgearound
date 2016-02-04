@@ -13,6 +13,8 @@ namespace LodgeAround.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            
              
         }
     }
