@@ -161,15 +161,57 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\imgs\175138945.jpg" />
+    <Content Include="Content\imgs\485206797.jpg" />
+    <Content Include="Content\imgs\514398345.jpg" />
+    <Content Include="Content\imgs\557921591.jpg" />
+    <Content Include="Content\imgs\89838028.jpg" />
+    <Content Include="Content\imgs\A-woman-seeing-outside-from-the-glass-window-next-to-the-sofa-of-exclusive-home-called-Opera-Penthouse-with-gorgeous-design-décor-of-Armani-created-by-Domb-Architects-in-Netanya-Israel-800x533.jpg" />
+    <Content Include="Content\imgs\chevron-right-128.png" />
+    <Content Include="Content\imgs\chevron_white_32.png" />
+    <Content Include="Content\imgs\facebook.png" />
+    <Content Include="Content\imgs\ironman.jpg" />
+    <Content Include="Content\imgs\ironman2.jpg" />
+    <Content Include="Content\imgs\ironman3.jpg" />
+    <Content Include="Content\imgs\ironman4.jpg" />
+    <Content Include="Content\imgs\ironman44.jpg" />
+    <Content Include="Content\imgs\ironman5.jpg" />
+    <Content Include="Content\imgs\jena1.jpg" />
+    <Content Include="Content\imgs\jena1500x600.jpg" />
+    <Content Include="Content\imgs\jena2.jpg" />
+    <Content Include="Content\imgs\jena3.jpg" />
+    <Content Include="Content\imgs\landlord.png" />
+    <Content Include="Content\imgs\landlord2.png" />
+    <Content Include="Content\imgs\myj1.jpg" />
+    <Content Include="Content\imgs\myj2.jpg" />
+    <Content Include="Content\imgs\renter.png" />
+    <Content Include="Content\imgs\Untitled-1.jpg" />
+    <Content Include="Content\css\layout.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\BGT65__C.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +223,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_rootlayout.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -190,7 +239,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

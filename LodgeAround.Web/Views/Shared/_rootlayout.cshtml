@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/layout.css">
+    <title>Lodgearound</title>
+    <link rel="icon" type="/Content/image/png" href="/Content/imgs/gabdesign2.png">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <h1>ПО-ДОБРИЯ НАЧИН ЗА НАЕМАНЕ</h1>
+            <h2>Социалната мрежа на София за отдаване и наемане на имоти</h2>
+            <a href="#"><span>как работи</span></a>
+        </div>
+    </header>
+    <div class="homeContainer">
+        <section class="fLeft landlordLogin">
+            <span class="landlordAvatar">
+                <div></div>
+            </span>
+            <h1>НАЕМОДАТЕЛ</h1>
+            <form>
+                <input id="eMailLand" type="email" name="email" placeholder="E-Mail Address">
+                <input id="passLand" type="password" name="pass" placeholder="Password">
+                <a href="#"><input id="submitLand" type="submit" value="ВХОД"></a>
+                <div class="rememberMe">
+                    <input class="fLeft" id="remember" type="checkbox" name="signed">
+                    <label class="fLeft">ЗАПОМНИ МЕ</label>
+                    <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
+                </div>
+            </form>
+            <div class="splitLine">
+                <span class="whiteLine100 fLeft"></span>
+                <span class="fLeft">или</span>
+                <span class="whiteLine100 fLeft"></span>
+            </div>
+            <a href="#">
+                <div class="fbLogin">
+                    <span class="fLeft fbLogo"></span>
+                    <span class="fLeft fbVhod">вход с facebook</span>
+                </div>
+            </a>
+
+            <form class="landLordRegform">
+                <input id="firstName" type="fname" name="fname" placeholder="First Name">
+                <input id="lastName" type="lname" name="lname" placeholder="Last Name">
+                <span class="phoneNumber">
+                    <input class="fLeft" id="phone" name="phone_number" placeholder="359" class="element text" size="3" maxlength="3" value="" type="text">
+                    <input class="fLeft" id="phone2" name="phone_number2" placeholder="887336227" class="element text" size="9" maxlength="9" value="" type="text">
+                </span>
+                <input id="eMailLand" type="email" name="email" placeholder="E-Mail Address">
+                <input id="passLand" type="password" name="pass" placeholder="Password">
+                <input id="passLand" type="password" name="pass" placeholder="Confirm Password">
+                <a href="#"><input id="submitLand" type="submit" value="ПОТВЪРДИ"></a>
+            </form>
+            <div class="regButton">
+                <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+            </div>
+            </a>
+        </section>
+        <section class="fLeft renterLogin">
+            <span class="renterAvatar">
+                <div></div>
+            </span>
+            <h1>НАЕМАТЕЛ</h1>
+            <form>
+                <input id="eMailRent" type="email" name="email" placeholder="E-Mail Address">
+                <input id="passRent" type="password" name="pass" placeholder="Password">
+                <a href="#"><input id="submitRent" type="submit" value="ВХОД"></a>
+                <div class="rememberMe">
+                    <input class="fLeft" id="remember" type="checkbox" name="signed">
+                    <label class="fLeft">ЗАПОМНИ МЕ</label>
+                    <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
+                </div>
+            </form>
+            <div class="splitLine">
+                <span class="whiteLine100 fLeft"></span>
+                <span class="fLeft">или</span>
+                <span class="whiteLine100 fLeft"></span>
+            </div>
+            <a href="#">
+                <div class="fbLogin">
+                    <span class="fLeft fbLogo"></span>
+                    <span class="fLeft fbVhod">вход с facebook</span>
+                </div>
+            </a>
+        </section>
+        @RenderBody()
+    </div>
+
+
+    <footer></footer>
+</body>
+</html>
