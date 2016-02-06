@@ -4,8 +4,8 @@
 }
 
 header{
-	background:url(../imgs/ironman44.jpg) no-repeat -20px;
-	height:600px;
+	/*background:url(../imgs/ironman44.jpg) no-repeat -20px;\
+	height:600px;*/
 }
 
 .headerContainer{
@@ -15,6 +15,7 @@ header{
 	position:relative;
 	padding-top:200px;
 	overflow:hidden;
+    height:400px;
 }
 
 .headerContainer h1{
@@ -249,11 +250,23 @@ header{
     -webkit-transform: scale(0.95);
 }
 
+.ifNoAccount{
+	display:block;
+	width:300px;
+	height:30px;
+	margin:0 auto;
+	font-family:bg1;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+}
+
 .regButton{
 	width:400px;
 	height:50px;
 	background:#ffa300;
-	border:2px solid #f29b00;
+	border-top:none;
 	font-family:bg1;
 	color:#ffffff;
 	font-weight:bold;
@@ -273,13 +286,133 @@ header{
 	line-height:32px;
 	display:block;
 	text-align:center;
-	margin:9px auto;
+	margin:0 auto;
+	padding:9px 0;
 	overflow:hidden;
 }
 
 .landLordRegform{
 	background:#f29b00;
+	margin:20px 0;
+	border-radius:20px;
 }
+
+.landLordRegformPad{
+	background:#f29b00;
+	overflow:hidden;
+}
+
+#firstName{	
+	display:block;
+	width:300px;
+	height:30px;
+	margin:30px auto 5px;
+	padding:5px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#lastName{	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+.phoneNumber{
+	display:block;
+	width:314px;
+	margin:5px auto;
+	overflow:hidden;}
+	
+#phone{
+	display:block;
+	width:70px;
+	height:30px;
+	padding:5px;
+	margin-right:6px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+#phone2{
+	display:block;
+	width:210px;
+	height:30px;
+	padding:5px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;
+}
+#emailReg{	display:block;
+
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#passReg{	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#passConf{	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#ffa300;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#submitReg{	
+	display:block;
+	width:150px;
+	height:40px;
+	padding:5px;
+	margin:20px auto 0;
+	background:rgba(255,163,0,0.3);
+	border:2px solid #ffa300;
+	color:#ffffff;
+	font-family:bg1;
+	font-size:16px;
+	font-weight:bold;
+	outline:none;
+}
+
+#submitReg:hover{
+	background:rgba(255,163,0,0.7);
+	cursor:pointer;
+}	
 
 .renterLogin{
 	width:400px;
@@ -360,10 +493,280 @@ header{
 	background:rgba(77,175,110,1);
 }
 
+.renterRegButton{
+	width:400px;
+	height:50px;
+	background:#55b475;
+	border-top:none;
+	font-family:bg1;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+	display:block;
+}
+
+.chevronRight{
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/chevron_white_32.png);
+}
+
+.renterRegistriraiSe{
+	width:250px;
+	line-height:32px;
+	display:block;
+	text-align:center;
+	margin:0 auto;
+	padding:9px 0;
+	overflow:hidden;
+}
+
+.renterRegform{
+	background:#4daf6e;
+	margin:20px 0;
+}
+
+.renterRegformPad{
+	background:#4daf6e;
+	overflow:hidden;
+}
+
+#renterFirstName{	
+	display:block;
+	width:300px;
+	height:30px;
+	margin:30px auto 5px;
+	padding:5px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#renterLastName{	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+.phoneNumber{
+	display:block;
+	width:314px;
+	margin:5px auto;
+	overflow:hidden;}
+	
+#renterPhone{
+	display:block;
+	width:70px;
+	height:30px;
+	padding:5px;
+	margin-right:6px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+#renterPhone2{
+	display:block;
+	width:210px;
+	height:30px;
+	padding:5px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;
+}
+#renterEmailReg{	display:block;
+
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#renterPassReg{	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#renterPassConf{	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#55b475;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;}
+	
+#renterSubmitReg{	
+	display:block;
+	width:150px;
+	height:40px;
+	padding:5px;
+	margin:20px auto 0;
+	background:rgba(77,175,110,0.3);
+	border:2px solid #55b475;
+	color:#ffffff;
+	font-family:bg1;
+	font-size:16px;
+	font-weight:bold;
+	outline:none;
+}
+
+#renterSubmitReg:hover{
+	background:rgba(85,180,117,0.7);
+	cursor:pointer;
+}
+
 .fLeft{
 	float:left;
 }
 
 .fRight{
 	float:right;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+header{
+	width:1199px;
+}
+.headerContainer{
+	width:1199px;
+}
+.headerContainer h1{
+	width:1100px;
+}
+.headerContainer h2{
+	width:1050px;
+}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+header{
+	width:991px;
+}
+.headerContainer{
+	width:991px;
+}
+.headerContainer h1{
+	width:800px;
+}
+.headerContainer h2{
+	width:750px;
+}
+.homeContainer{
+	width:768px;
+	margin:0 auto;
+}
+.landlordLogin{
+	width:384px;
+	margin:0;
+}
+.renterLogin{
+	width:384px;
+	margin:0;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+header{
+	width:767px;
+}
+.headerContainer{
+	width:667px;
+}
+.headerContainer h1{
+	width:667px;
+}
+.headerContainer h2{
+	width:667px;
+}
+.homeContainer{
+	width:767px;
+}
+.landlordLogin{
+	width:767px;
+	margin:0;
+}
+.renterLogin{
+	width:767px;
+	margin:20px 0;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+header{
+	width:480px;
+}
+.headerContainer{
+	width:480px;
+}
+.headerContainer h1{
+	width:380px;
+	margin:0 auto;
+}
+.headerContainer h2{
+	width:380px;
+	margin:0 auto;
+}
+
+.homeContainer{
+	width:480px;
+}
+.landlordLogin{
+	width:480px;
+	margin:0;
+}
+.renterLogin{
+	width:480px;
+	margin:20px 0;
+}
+}
+
+#background {
+    width: 100%; 
+    height: 600px; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
 }

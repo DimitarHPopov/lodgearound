@@ -1,0 +1,369 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+header{
+	background:url(../imgs/ironman44.jpg) no-repeat -20px;
+	height:600px;
+}
+
+.headerContainer{
+	width:960px;
+	margin:0 auto;
+	font-family:bg1;
+	position:relative;
+	padding-top:200px;
+	overflow:hidden;
+}
+
+.headerContainer h1{
+	display:block;
+	text-align:center;
+	color:#ffffff;
+	font-size:40px;
+}
+
+.headerContainer h2{
+	display:block;
+	text-align:center;
+	color:#ffffff;
+	font-size:20px;
+	margin-top:50px;
+}
+
+.headerContainer span{
+	display:block;
+	margin:50px auto;
+	padding:10px;
+	background:rgba(76,103,161,0.7);
+	border-radius:5px;	
+	font-weight:bold;
+	width:150px;
+	text-align:center;
+	color:#ffffff;
+	font-size:20px;	
+}
+
+.headerContainer span:hover{
+	background:rgba(76,103,161,0.3);;
+}
+
+.headerContainer a{
+	text-decoration:none;
+}
+
+@font-face{
+    font-family:bg1;
+    src:url(../fonts/BGT65__C.ttf);
+}
+
+.homeContainer{
+	width:960px;
+	margin:50px auto;
+}
+
+.landlordLogin{
+	width:400px;
+	margin:40px;
+	background:#ffa300;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+.landlordAvatar{
+	display:block;
+	width:128px;
+	height:128px;
+	margin:10px auto;
+	background:#f29b00;
+	border-radius:50%;
+}
+
+.landlordAvatar div{
+	width:128px;
+	height:128px;
+	background:url(../imgs/landlord2.png);
+}
+
+.landlordLogin h1{
+	text-align:center;
+	color:#ffffff;
+	font-family:bg1;
+}
+
+.landlordLogin a{
+	text-decoration:none;
+}
+
+#eMailLand{
+	display:block;
+	width:300px;
+	height:30px;
+	margin:30px auto 5px;
+	padding:5px;
+	border-radius:5px;
+	background:#f29b00;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;
+}
+
+#passLand{
+	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#f29b00;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;
+}
+
+#submitLand{
+	display:block;
+	width:100px;
+	height:40px;
+	padding:5px;
+	margin:20px auto;
+	background:rgba(242,155,0,0.5);
+	border:2px solid #f29b00;
+	color:#ffffff;
+	font-family:bg1;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#submitLand:hover{
+	background:rgba(242,155,0,1);
+}
+
+.rememberMe{
+	width:300px;
+	height:20px;
+	display:block;
+	margin:20px auto;
+	position: relative;
+}
+
+#remember{
+	width:18px;
+	height:18px;
+	margin:1px;
+	color:#ffffff;
+	background:#f29b00;
+	border:2px solid #ffffff;
+}
+
+.rememberMe label{
+	color:#ffffff;
+	font-family:bg1;
+	font-weight:bold;
+	padding:4px 5px;
+	font-size:12px;
+}
+
+.rememberMe a{
+	padding:4px 0;
+	height:20px;
+	display:block;
+	text-decoration:none;
+	font-family:bg1;
+	color:#4c67a1;
+	font-weight:bold;
+	float:right;
+	text-align:right;
+	font-size:12px;
+}
+
+.rememberMe a:hover{
+	text-decoration:underline;
+}
+
+.splitLine{
+	width:300px;
+	height:20px;
+	margin:40px auto;
+}
+
+.whiteLine100{
+	display:block;
+	width:100px;
+	height:2px;
+	border-top:2px solid #ffffff;
+	margin-top:9px;
+}
+
+.splitLine span{
+	width:100px;
+	height:18px;
+	text-align:center;
+	font-family:bg1;
+	color:#ffffff;
+
+}
+
+.fbLogin{
+	display:block;
+	width:200px;
+	height:30px;
+	padding:5px;
+	background:#4c67a1;
+	margin:0 auto 50px;
+	border:2px solid #ffffff;
+	border-radius:5px;
+}
+
+.fbLogin:hover{
+	border:2px solid #4c67a1;
+	transition: 1s ease;
+	-ms-transition:1s ease;
+    -webkit-transition: 1s ease;
+
+}
+
+.fbVhod{
+	display:block;
+	width:170px;
+	font-family:bg1;
+	color:#ffffff;
+	text-align:center;
+	margin:7px 0;
+	font-weight:bold;
+}
+
+.fbLogo{
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../imgs/facebook.png);
+}
+
+.fbLogo:hover{
+    transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+}
+
+.regButton{
+	width:400px;
+	height:50px;
+	background:#ffa300;
+	border:2px solid #f29b00;
+	font-family:bg1;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+	display:block;
+}
+
+.chevronRight{
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/chevron_white_32.png);
+}
+
+.registriraiSe{
+	width:250px;
+	line-height:32px;
+	display:block;
+	text-align:center;
+	margin:9px auto;
+	overflow:hidden;
+}
+
+.landLordRegform{
+	background:#f29b00;
+}
+
+.renterLogin{
+	width:400px;
+	margin:40px;
+	background:#55b475;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+.renterLogin h1{
+	text-align:center;
+	color:#ffffff;
+	font-family:bg1;
+}
+
+.renterLogin a{
+	text-decoration:none;
+}
+
+.renterAvatar{
+	display:block;
+	width:128px;
+	height:128px;
+	margin:10px auto;
+	background:#4daf6e;
+	border-radius:50%;
+}
+
+.renterAvatar div{
+	width:128px;
+	height:128px;
+	background:url(../imgs/renter.png);
+}
+
+#eMailRent{
+	display:block;
+	width:300px;
+	height:30px;
+	margin:30px auto 5px;
+	padding:5px;
+	border-radius:5px;
+	background:#4daf6e;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;
+}
+
+#passRent{
+	display:block;
+	width:300px;
+	height:30px;
+	margin:5px auto;
+	padding:5px;
+	border-radius:5px;
+	background:#4daf6e;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	font-family:bg1;
+	outline:none;
+}
+
+#submitRent{
+	display:block;
+	width:100px;
+	height:40px;
+	padding:5px;
+	margin:20px auto;
+	background:rgba(77,175,110,0.3);
+	border:2px solid #4daf6e;
+	color:#ffffff;
+	font-family:bg1;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#submitRent:hover{
+	background:rgba(77,175,110,1);
+}
+
+.fLeft{
+	float:left;
+}
+
+.fRight{
+	float:right;
+}
