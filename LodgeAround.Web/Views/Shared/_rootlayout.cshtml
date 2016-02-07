@@ -54,6 +54,9 @@
                 </div>
             </a>
             <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
+            <div class="regButton"  onclick="openReg('landLordRegformPad')">
+                <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+            </div>
             <div class="landLordRegformPad">
                 <form class="landLordRegform">
                     <input id="firstName" type="fname" name="fname" placeholder="First Name">
@@ -67,9 +70,6 @@
                     <input id="passConf" type="password" name="pass" placeholder="Confirm Password">
                     <a href="#"><input id="submitReg" type="submit" value="ПОТВЪРДИ"></a>
                 </form>
-            </div>
-            <div class="regButton">
-                <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
             </div>
             </a>
         </section>
@@ -101,22 +101,22 @@
                 </div>
             </a>
             <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
+            <div class="renterRegButton" onclick="openReg('renterRegformPad')">
+                <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+            </div>
             <div class="renterRegformPad">
                 <form class="renterRegform">
-                    <input id="renterFirstName" type="fname" name="fname" placeholder="First Name">
-                    <input id="renterLastName" type="lname" name="lname" placeholder="Last Name">
+                    <input id="renterFirstName" type="text" name="fname" placeholder="First Name">
+                    <input id="renterLastName" type="text" name="lname" placeholder="Last Name">
                     <span class="phoneNumber">
-                        <input class="fLeft" id="renterPhone" name="phone_number" placeholder="359" class="element text" size="3" maxlength="3" value="" type="text">
-                        <input class="fLeft" id="renterPhone2" name="phone_number2" placeholder="887336227" class="element text" size="9" maxlength="9" value="" type="text">
+                        <input  id="renterPhone" name="phone_number" placeholder="359" class="fLeft element text" size="3" maxlength="3" value="" type="text">
+                        <input  id="renterPhone2" name="phone_number2" placeholder="887336227" class="fLeft element text" size="9" maxlength="9" value="" type="text">
                     </span>
                     <input id="renterEmailReg" type="email" name="email" placeholder="E-Mail Address">
                     <input id="renterPassReg" type="password" name="pass" placeholder="Password">
                     <input id="renterPassConf" type="password" name="pass" placeholder="Confirm Password">
                     <a href="#"><input id="renterSubmitReg" type="submit" value="ПОТВЪРДИ"></a>
                 </form>
-            </div>
-            <div class="renterRegButton">
-                <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
             </div>
             </a>
         </section>

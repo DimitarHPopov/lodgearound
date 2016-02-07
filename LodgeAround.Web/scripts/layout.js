@@ -10,3 +10,8 @@ function closeHowItWorks()
 {
     $("#how_it_works").slideUp("slow");
 }
+
+function openReg(name)
+{
+    $('.' + name).slideDown("slow");
+}

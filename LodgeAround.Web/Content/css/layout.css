@@ -12,6 +12,7 @@ header{
     float:right;
 }
 
+
 .headerContainer{
 	width:960px;
 	margin:0 auto;
@@ -304,6 +305,7 @@ header{
 .landLordRegformPad{
 	background:#f29b00;
 	overflow:hidden;
+    display:none;
 }
 
 #firstName{	
@@ -534,6 +536,7 @@ header{
 .renterRegformPad{
 	background:#4daf6e;
 	overflow:hidden;
+    display:none;
 }
 
 #renterFirstName{	
