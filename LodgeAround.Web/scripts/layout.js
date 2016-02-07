@@ -13,5 +13,12 @@ function closeHowItWorks()
 
 function openReg(name)
 {
-    $('.' + name).slideDown("slow");
+    if ($('.' + name).is(":hidden")) {
+        $('.' + name).slideDown("slow");
+    }
+    else
+    {
+        $('.' + name).slideUp("slow");
+
+    }
 }
