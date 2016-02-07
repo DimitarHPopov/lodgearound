@@ -5,19 +5,25 @@
     <link rel="stylesheet" type="text/css" href="Content/css/layout.css">
     <title>LodgeAround</title>
     <link rel="icon" type="image/png" href="imgs/gabdesign2.png">
+    <script src="~/scripts/layout.js"></script>
+    <script src="~/scripts/jquery-2.2.0.js"></script>
 </head>
 <body>
+    <div id="how_it_works">
+        Test
+        <div class="float_right close_how_it_works" onclick="closeHowItWorks()">X</div>
+    </div>
     <!--================================HEADER=====================================-->
-    <header>
+    <div>
         <div id="background">
             <img src="~/Content/imgs/ironman44.jpg" class="stretch" alt="" />
         </div>
         <div class="headerContainer">
-            <h1>ПО-ДОБРИЯ НАЧИН ЗА НАЕМАНЕ</h1>
+            <h1>ПО-ДОБРИЯТ НАЧИН ЗА НАЕМАНЕ</h1>
             <h2>Социалната мрежа на София за отдаване и наемане на имоти</h2>
-            <a href="#"><span>как работи</span></a>
+            <a onclick="showHowItWorks()"><span>как работи</span></a>
         </div>
-    </header>
+    </div>
     <!--================================LOGIN FORMS=====================================-->
     <div class="homeContainer">
         <!--================================LANDLORD LOGIN=====================================-->
