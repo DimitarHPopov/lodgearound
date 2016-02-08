@@ -2,19 +2,31 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="/Content/css/layout.css">
-    <title>Lodgearound</title>
-    <link rel="icon" type="/Content/image/png" href="/Content/imgs/gabdesign2.png">
+    <link rel="stylesheet" type="text/css" href="Content/css/layout.css">
+    <title>LodgeAround</title>
+    <link rel="icon" type="image/png" href="imgs/gabdesign2.png">
+    <script src="~/scripts/layout.js"></script>
+    <script src="~/scripts/jquery-2.2.0.js"></script>
 </head>
 <body>
-    <header>
-        <div class="headerContainer">
-            <h1>ПО-ДОБРИЯ НАЧИН ЗА НАЕМАНЕ</h1>
-            <h2>Социалната мрежа на София за отдаване и наемане на имоти</h2>
-            <a href="#"><span>как работи</span></a>
+    <div id="how_it_works">
+        Test
+        <div class="float_right close_how_it_works" onclick="closeHowItWorks()">X</div>
+    </div>
+    <!--================================HEADER=====================================-->
+    <div>
+        <div id="background">
+            <img src="~/Content/imgs/ironman44.jpg" class="stretch" alt="" />
         </div>
-    </header>
+        <div class="headerContainer">
+            <h1>ПО-ДОБРИЯТ НАЧИН ЗА НАЕМАНЕ</h1>
+            <h2>Социалната мрежа на София за отдаване и наемане на имоти</h2>
+            <a onclick="showHowItWorks()"><span>как работи</span></a>
+        </div>
+    </div>
+    <!--================================LOGIN FORMS=====================================-->
     <div class="homeContainer">
+        <!--================================LANDLORD LOGIN=====================================-->
         <section class="fLeft landlordLogin">
             <span class="landlordAvatar">
                 <div></div>
@@ -41,24 +53,27 @@
                     <span class="fLeft fbVhod">вход с facebook</span>
                 </div>
             </a>
-
-            <form class="landLordRegform">
-                <input id="firstName" type="fname" name="fname" placeholder="First Name">
-                <input id="lastName" type="lname" name="lname" placeholder="Last Name">
-                <span class="phoneNumber">
-                    <input class="fLeft" id="phone" name="phone_number" placeholder="359" class="element text" size="3" maxlength="3" value="" type="text">
-                    <input class="fLeft" id="phone2" name="phone_number2" placeholder="887336227" class="element text" size="9" maxlength="9" value="" type="text">
-                </span>
-                <input id="eMailLand" type="email" name="email" placeholder="E-Mail Address">
-                <input id="passLand" type="password" name="pass" placeholder="Password">
-                <input id="passLand" type="password" name="pass" placeholder="Confirm Password">
-                <a href="#"><input id="submitLand" type="submit" value="ПОТВЪРДИ"></a>
-            </form>
-            <div class="regButton">
+            <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
+            <div class="regButton"  onclick="openReg('landLordRegformPad')">
                 <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+            </div>
+            <div class="landLordRegformPad">
+                <form class="landLordRegform">
+                    <input id="firstName" type="fname" name="fname" placeholder="First Name">
+                    <input id="lastName" type="lname" name="lname" placeholder="Last Name">
+                    <span class="phoneNumber">
+                        <input class="fLeft" id="phone" name="phone_number" placeholder="359" class="element text" size="3" maxlength="3" value="" type="text">
+                        <input class="fLeft" id="phone2" name="phone_number2" placeholder="887336227" class="element text" size="9" maxlength="9" value="" type="text">
+                    </span>
+                    <input id="emailReg" type="email" name="email" placeholder="E-Mail Address">
+                    <input id="passReg" type="password" name="pass" placeholder="Password">
+                    <input id="passConf" type="password" name="pass" placeholder="Confirm Password">
+                    <a href="#"><input id="submitReg" type="submit" value="ПОТВЪРДИ"></a>
+                </form>
             </div>
             </a>
         </section>
+        <!--================================RENTER LOGIN=====================================-->
         <section class="fLeft renterLogin">
             <span class="renterAvatar">
                 <div></div>
@@ -85,11 +100,31 @@
                     <span class="fLeft fbVhod">вход с facebook</span>
                 </div>
             </a>
+            <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
+            <div class="renterRegButton" onclick="openReg('renterRegformPad')">
+                <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+            </div>
+            <div class="renterRegformPad">
+                <form class="renterRegform">
+                    <input id="renterFirstName" type="text" name="fname" placeholder="First Name">
+                    <input id="renterLastName" type="text" name="lname" placeholder="Last Name">
+                    <span class="phoneNumber">
+                        <input  id="renterPhone" name="phone_number" placeholder="359" class="fLeft element text" size="3" maxlength="3" value="" type="text">
+                        <input  id="renterPhone2" name="phone_number2" placeholder="887336227" class="fLeft element text" size="9" maxlength="9" value="" type="text">
+                    </span>
+                    <input id="renterEmailReg" type="email" name="email" placeholder="E-Mail Address">
+                    <input id="renterPassReg" type="password" name="pass" placeholder="Password">
+                    <input id="renterPassConf" type="password" name="pass" placeholder="Confirm Password">
+                    <a href="#"><input id="renterSubmitReg" type="submit" value="ПОТВЪРДИ"></a>
+                </form>
+            </div>
+            </a>
         </section>
-        @RenderBody()
     </div>
 
+    @RenderBody()
 
+    <!--================================FOOTER=====================================-->
     <footer></footer>
 </body>
 </html>
