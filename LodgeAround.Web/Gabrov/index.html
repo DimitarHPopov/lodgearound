@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="Content/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/layout.css">
     <title>LodgeAround</title>
     <link rel="icon" type="image/png" href="imgs/gabdesign2.png">
-    <script src="scripts/layout.js"></script>
-    <script src="scripts/jquery-2.2.0.js"></script>
+    <script src="/scripts/layout.js"></script>
+    <script src="/scripts/jquery-2.2.0.js"></script>
 </head>
 <body>
     <div id="how_it_works">
@@ -31,7 +31,7 @@
 		</div>
         <div id="background">
 					
-            <img src="Content/imgs/ironman44.jpg" class="stretch" alt="" />
+            <img src="/Content/imgs/ironman44.jpg" class="stretch" alt="" />
         </div>
         <div class="headerContainer">
 		
@@ -71,9 +71,6 @@
                 </div>
             </a>
             <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
-            <div class="regButton"  onclick="openReg('landLordRegformPad')">
-                <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
-            </div>
             <div class="landLordRegformPad">
                 <form class="landLordRegform">
                     <input id="firstName" type="fname" name="fname" placeholder="First Name">
@@ -87,6 +84,9 @@
                     <input id="passConf" type="password" name="pass" placeholder="Confirm Password">
                     <a href="#"><input id="submitReg" type="submit" value="ПОТВЪРДИ"></a>
                 </form>
+            </div>
+            <div class="regButton"  onclick="openReg('landLordRegformPad')">
+                <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
             </div>
         </section>
 
@@ -118,22 +118,22 @@
                 </div>
             </a>
             <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
-            <div class="renterRegButton" onclick="openReg('renterRegformPad')">
-                <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
-            </div>
             <div class="renterRegformPad">
                 <form class="renterRegform">
                     <input id="renterFirstName" type="text" name="fname" placeholder="First Name">
                     <input id="renterLastName" type="text" name="lname" placeholder="Last Name">
                     <span class="phoneNumber">
-                        <input  id="renterPhone" name="phone_number" placeholder="359" class="fLeft element text" size="3" maxlength="3" value="" type="text">
-                        <input  id="renterPhone2" name="phone_number2" placeholder="887336227" class="fLeft element text" size="9" maxlength="9" value="" type="text">
+                        <input id="renterPhone" name="phone_number" placeholder="359" class="fLeft element text" size="3" maxlength="3" value="" type="text">
+                        <input id="renterPhone2" name="phone_number2" placeholder="887336227" class="fLeft element text" size="9" maxlength="9" value="" type="text">
                     </span>
                     <input id="renterEmailReg" type="email" name="email" placeholder="E-Mail Address">
                     <input id="renterPassReg" type="password" name="pass" placeholder="Password">
                     <input id="renterPassConf" type="password" name="pass" placeholder="Confirm Password">
                     <a href="#"><input id="renterSubmitReg" type="submit" value="ПОТВЪРДИ"></a>
                 </form>
+            </div>
+            <div class="renterRegButton" onclick="openReg('renterRegformPad')">
+                <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
             </div>
         </section>
     </div>
