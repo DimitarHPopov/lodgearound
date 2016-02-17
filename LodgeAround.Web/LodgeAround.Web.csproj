@@ -135,6 +135,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\landlord_profile.css" />
     <Content Include="Content\css\rentner_profile.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\imgs\175138945.jpg" />
@@ -165,6 +166,9 @@
     <Content Include="Content\css\layout.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Gabrov\index.html" />
+    <Content Include="Gabrov\landlordProfile.html" />
+    <Content Include="Gabrov\rentnerProfile.html" />
     <Content Include="Global.asax" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -201,7 +205,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="scripts\jquery-2.2.0.min.map" />
     <Content Include="Views\Home\neshto.cshtml" />
-    <Content Include="Gabrov\renterHtml.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
