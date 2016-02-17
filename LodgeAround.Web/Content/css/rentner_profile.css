@@ -1,0 +1,158 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.fLeft{
+	float:left;
+}
+
+.fRight{
+	float:right;
+}
+
+body{
+	background:#55b475;
+}
+
+.renterProfile{
+	width:300px;
+	background:#55b475;
+	overflow:hidden;
+}
+
+.profilePad{
+	width:128px;
+	height:128px;
+	display:block;
+	border-radius:50%;
+	background:#4daf6e;
+	margin:10px auto;
+}
+
+.renterProfile span{
+	width:128px;
+	height:128px;
+	display:block;
+	background:url(../imgs/renter.png);
+}
+
+.renterProfile h1{
+	font-family:bg1;
+	display:block;
+	text-align:center;
+	margin:10px auto;
+	color:#ffffff;
+}
+
+.renterProfile button{
+	display:block;
+	background:none;
+	border:none;
+	margin:10px auto;
+	color:#3d4542;
+	font-weight:bold;
+	font-size:10px;
+	outline:none;
+}
+
+.renterProfile button:hover{
+	cursor:pointer;
+
+}
+
+.renterProfile a{
+	text-decoration:none;
+}
+
+.profileMenu{
+	width:300px;
+	background:#;
+	list-style-type:none;
+	overflow:hidden;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.profileMenu li{
+	margin:0 auto;
+	padding:10px 0;
+	overflow:hidden;
+}
+
+.profileMenu li:hover{
+	background:#4daf6e;
+	cursor:pointer;
+	transition:0.5s ease;
+	-webkit-transition:0.5s ease;
+	-moz-transition:0.5s ease;
+}
+
+.liCont{
+	width:200px;
+	height:32px;
+	margin:0 auto;
+}
+
+.profileMenu li h2{
+	font-family:bg1;
+	font-size:16px;
+	padding: 8px 0;
+	color:#ffffff;
+	text-align:center;
+}
+
+.profileIcon{
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/profileSprite.png) 0px 0px;
+}
+
+.messagesIcon{	
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/profileSprite.png) -32px 0;
+	}
+	
+.myLodgesIcon{	
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/profileSprite.png) -64px 0;
+	}
+
+.siteWrapper{
+	width:960px;
+	height:1000px;
+	background:#ffffff;
+	color:#4daf6e;
+	font-family:bg1;
+}	
+
+.siteWrapper h1{
+	background:#3d4542;
+	font-size:26px;
+	padding:12px 5px;
+}
+
+.myProfile{
+	width:960px;
+}
+
+.messages{
+	width:960px;
+}
+
+.lodgeSearch{
+	width:960px;
+}
+
+.favLodges{
+	width:960px;	
+}
+
+.Help{
+	width:960px;
+}

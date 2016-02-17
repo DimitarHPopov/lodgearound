@@ -135,6 +135,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\rentner_profile.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\imgs\175138945.jpg" />
     <Content Include="Content\imgs\485206797.jpg" />
