@@ -1,0 +1,124 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.fLeft{
+	float:left;
+}
+
+.fRight{
+	float:right;
+}
+
+body{
+	background:#3d4542;
+}
+
+.landProfile{
+	width:300px;
+	background:#ffa300;
+	overflow:hidden;
+}
+
+.profilePad{
+	width:128px;
+	height:128px;
+	display:block;
+	border-radius:50%;
+	background:#f29b00;
+	margin:10px auto;
+}
+
+.landProfile span{
+	width:128px;
+	height:128px;
+	display:block;
+	background:url(../imgs/landlord2.png);
+}
+
+.landProfile h1{
+	font-family:bg1;
+	display:block;
+	text-align:center;
+	margin:10px auto;
+	color:#ffffff;
+}
+
+.landProfile button{
+	display:block;
+	background:none;
+	border:none;
+	margin:10px auto;
+	color:#3d4542;
+	font-weight:bold;
+	font-size:10px;
+	outline:none;
+}
+
+.landProfile button:hover{
+	cursor:pointer;
+
+}
+
+.landProfile a{
+	text-decoration:none;
+}
+
+.profileMenu{
+	width:300px;
+	background:#f29b00;
+	list-style-type:none;
+	overflow:hidden;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.profileMenu li{
+	margin:0 auto;
+	padding:10px 0;
+	overflow:hidden;
+}
+
+.profileMenu li:hover{
+	background:#ffa300;
+	cursor:pointer;
+	transition:0.5s ease;
+	-webkit-transition:0.5s ease;
+	-moz-transition:0.5s ease;
+}
+
+.liCont{
+	width:200px;
+	height:32px;
+	margin:0 auto;
+}
+
+.profileMenu li h2{
+	font-family:bg1;
+	font-size:16px;
+	padding: 8px 0;
+	color:#ffffff;
+	text-align:center;
+}
+
+.myProf{
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/profileSprite.png) 0px 0px;
+}
+
+.messages{	
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/profileSprite.png) -32px 0;
+	}
+	
+.myLodges{	
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(../imgs/profileSprite.png) -64px 0;
+	}
