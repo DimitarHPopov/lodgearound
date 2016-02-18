@@ -329,6 +329,16 @@ header{
 	background:url(../imgs/chevron_white_32.png);
 }
 
+    .chevronRight:hover {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transition:0.5s ease;
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    }
+
 .registriraiSe{
 	width:250px;
 	line-height:32px;
@@ -337,6 +347,10 @@ header{
 	margin:0 auto;
 	padding:9px 0;
 	overflow:hidden;
+}
+
+.registriraiSe:hover{
+    cursor:pointer;
 }
 
 .landLordRegform{
@@ -569,6 +583,10 @@ header{
 	margin:0 auto;
 	padding:9px 0;
 	overflow:hidden;
+}
+
+.renterRegistriraiSe:hover{
+    cursor:pointer;
 }
 
 .renterRegform{
