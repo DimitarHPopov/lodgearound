@@ -23,11 +23,11 @@
             <div class="headerTopLine">
                 <span class="logoTop fLeft">LodgeAround</span>
                 <ul class="fRight">
-                    <li class="fLeft loginReg">ВХОД</li>
-                    <li class="fLeft loginReg">РЕГИСТРАЦИЯ</li>
+                    <a href="#loginReg"><li class="fLeft loginReg">ВХОД</li></a>
+                    <a href="#loginReg"><li class="fLeft loginReg">РЕГИСТРАЦИЯ</li></a>
                     <li class="profileTop fLeft">
-                        <span class="userName"></span>
-                        <img>
+                    <span class="userName"></span>
+                    <img>
                     </li>
                 </ul>
             </div>
@@ -42,7 +42,7 @@
     </div>
 </header>
 <!--================================LOGIN FORMS=====================================-->
-<div class="homeContainer">
+<div class="homeContainer" id="loginReg">
 <!--================================LANDLORD LOGIN=====================================-->
         <section class="fLeft landlordLogin">
             <span class="landlordAvatar">
@@ -73,8 +73,8 @@
             <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
             <div class="landLordRegformPad">
                 <form class="landLordRegform">
-                    <input id="firstName" type="fname" name="fname" placeholder="First Name">
-                    <input id="lastName" type="lname" name="lname" placeholder="Last Name">
+                    <input id="firstName" type="text" name="fname" placeholder="First Name">
+                    <input id="lastName" type="text" name="lname" placeholder="Last Name">
                     <span class="phoneNumber">
                         <input class="fLeft" id="phone" name="phone_number" placeholder="359" size="3" maxlength="3" value="" type="text">
                         <input class="fLeft" id="phone2" name="phone_number2" placeholder="887336227" size="9" maxlength="9" value="" type="text">
