@@ -65,23 +65,58 @@ header{
 .lnr-bubble {
     color: #ffffff;
     font-family:icons;
-    font-size:30px;
+    font-size:34px;
 }
 
-.loged h1 {
+.messages h1 {
     font-family:bg1;
     font-size:16px;
-    padding:7px 10px;
+    padding:9px 10px;
 }
 
-.loged div {
-    width:45px;
-    height:45px;
+.messages:hover {
+    cursor:pointer
+}
+
+.logedProf div{
+    width:30px;
+    height:30px;
     display:block;
     background:url(../imgs/profPic.jpg);
     border-radius:50%;
+    border:3px solid #ffffff;
     
 }
+
+.logedProf h1 {
+    font-family:bg1;
+    font-size:16px;
+    padding:9px 10px;
+}
+
+.logedProf:hover {
+    cursor:pointer;
+}
+
+.lnr-power-switch {
+    color: #ffffff;
+    font-family:icons;
+    font-size:34px;
+}
+
+ .lnr-power-switch:hover {
+    cursor:pointer;
+    }
+
+.lnr-cross{
+    color: #ffffff;
+    font-family:icons;
+    font-size:30px;
+}
+
+    .lnr-cross:hover {
+    cursor:pointer;
+    }
 
 .headerContainer{
 	width:960px;
@@ -882,8 +917,4 @@ header{
 .close_how_it_works
 {
     margin:20px;
-    border:2px solid white;
-    border-radius:50px 50px;
-    padding:10px 15px;
-    color:white;
 }
