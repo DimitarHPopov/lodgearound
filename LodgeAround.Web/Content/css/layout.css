@@ -56,19 +56,31 @@ header{
 	cursor:pointer;
 }
 
-.loged span{
-    font-size:20px;
+.loged li {
+    display:block;
+    padding:1px;
+    overflow:hidden;
 }
 
-.lnr-mustache {
-  color: #0F52BA;
-  font-size:40px;
+.lnr-bubble {
+    color: #ffffff;
+    font-family:icons;
+    font-size:30px;
 }
 
-body {
-  font-size: 40px;
-  font-family: sans-serif;
-  color: #555;
+.loged h1 {
+    font-family:bg1;
+    font-size:16px;
+    padding:7px 10px;
+}
+
+.loged div {
+    width:45px;
+    height:45px;
+    display:block;
+    background:url(../imgs/profPic.jpg);
+    border-radius:50%;
+    
 }
 
 .headerContainer{
