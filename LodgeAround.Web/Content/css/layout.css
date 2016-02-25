@@ -781,6 +781,125 @@ header{
 	cursor:pointer;
 }
 
+.searchForm {
+    width:960px;
+    margin:100px auto;
+    display:block;
+    overflow:hidden;
+    font-family:bg1;
+}
+
+.raion {
+    width:250px;
+    height:100px;
+}
+
+.raion label {
+    width:250px;
+    height:20px;
+    text-align:center;
+}
+
+.raion select {
+    width:250px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+}
+
+.kvartal {
+    width:250px;
+    height:100px;
+}
+
+.kvartal label {
+    width:250px;
+    height:20px;
+    text-align:center;
+}
+
+.kvartal select {
+    width:250px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+}
+
+.tipImot {
+    width:200px;
+    height:100px;
+}
+
+.tipImot label {
+    width:200px;
+    height:20px;
+    text-align:center;
+}
+
+.tipImot select {
+    width:200px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+}
+
+.broyStai {
+    width:100px;
+    height:100px;
+}
+
+.broyStai label {
+    width:100px;
+    height:20px;
+    text-align:center;
+}
+
+.broyStai select {
+    width:100px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+}
+
+#searchSubmit {
+    width:160px;
+    height:100px;
+    margin-top:20px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+}
+
+#background {
+    width: 100%; 
+    height: 600px;
+    position:relative;
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+#how_it_works{
+    background:white;
+    height:100%;
+    width:100%;
+    display:none;
+    background-color:rgba(76,103,161,0.7);
+}
+.close_how_it_works
+{
+    margin:20px;
+}
+
 .fLeft{
 	float:left;
 }
@@ -866,61 +985,35 @@ header{
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-header{
-	width:480px;
-}
-.headerContainer{
-	width:480px;
-}
-.headerContainer h1{
-	width:380px;
-	margin:0 auto;
-}
-.headerContainer h2{
-	width:380px;
-	margin:0 auto;
-}
+    header {
+        width: 480px;
+    }
 
-.homeContainer{
-	width:480px;
-}
-.landlordLogin{
-	width:480px;
-	margin:0;
-}
-.renterLogin{
-	width:480px;
-	margin:20px 0;
-}
+    .headerContainer {
+        width: 480px;
+    }
 
-.searchForm {
-    width:960px;
-    margin:0 auto;
-    display:block;
-}
+        .headerContainer h1 {
+            width: 380px;
+            margin: 0 auto;
+        }
 
-#background {
-    width: 100%; 
-    height: 600px;
-    position:relative;
-    left: 0px; 
-    top: 0px; 
-    z-index: 0;
-}
+        .headerContainer h2 {
+            width: 380px;
+            margin: 0 auto;
+        }
 
-.stretch {
-    width:100%;
-    height:100%;
-}
+    .homeContainer {
+        width: 480px;
+    }
 
-#how_it_works{
-    background:white;
-    height:100%;
-    width:100%;
-    display:none;
-    background-color:rgba(76,103,161,0.7);
-}
-.close_how_it_works
-{
-    margin:20px;
+    .landlordLogin {
+        width: 480px;
+        margin: 0;
+    }
+
+    .renterLogin {
+        width: 480px;
+        margin: 20px 0;
+    }
 }
