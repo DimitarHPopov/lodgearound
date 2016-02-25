@@ -178,6 +178,7 @@ header{
 .homeContainer{
 	width:960px;
 	margin:50px auto;
+    overflow:hidden;
 }
 
 .landlordLogin{
@@ -891,6 +892,11 @@ header{
 	width:480px;
 	margin:20px 0;
 }
+
+.searchForm {
+    width:960px;
+    margin:0 auto;
+    display:block;
 }
 
 #background {
