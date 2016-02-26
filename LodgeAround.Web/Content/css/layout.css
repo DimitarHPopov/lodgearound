@@ -24,7 +24,6 @@ header{
 
 .headerTopLine{
 	width:100%;
-
 	overflow:hidden;
     position:absolute;
     top:0;
@@ -179,6 +178,30 @@ header{
 	width:960px;
 	margin:50px auto;
     overflow:hidden;
+}
+
+.mainTitles {
+    width:250px;
+    margin:50px auto;
+    overflow:hidden;
+}
+
+.mainTitles h1{
+    text-align:center;
+    font-family:bg1;
+    margin-left:20px;
+}
+
+.lnr-apartment{
+    color: #000000;
+    font-family:icons;
+    font-size:34px;
+}
+
+.lnr-magnifier{
+    color: #000000;
+    font-family:icons;
+    font-size:34px;
 }
 
 .landlordLogin{
@@ -787,17 +810,17 @@ header{
     display:block;
     overflow:hidden;
     font-family:bg1;
+
+}
+
+.selected {
+    text-align:center;
+    border-bottom:2px solid #cccccc;
 }
 
 .raion {
     width:250px;
     height:100px;
-}
-
-.raion label {
-    width:250px;
-    height:20px;
-    text-align:center;
 }
 
 .raion select {
@@ -806,17 +829,16 @@ header{
     font-family:bg1;
     font-size:16px;
     outline:none;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+    border-right:2px solid #cccccc;
 }
 
 .kvartal {
     width:250px;
     height:100px;
-}
 
-.kvartal label {
-    width:250px;
-    height:20px;
-    text-align:center;
 }
 
 .kvartal select {
@@ -825,54 +847,65 @@ header{
     font-family:bg1;
     font-size:16px;
     outline:none;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+    border-right:2px solid #cccccc;
 }
 
 .tipImot {
-    width:200px;
+    width:150px;
     height:100px;
-}
-
-.tipImot label {
-    width:200px;
-    height:20px;
-    text-align:center;
 }
 
 .tipImot select {
-    width:200px;
+    width:150px;
     height:100px;
     font-family:bg1;
     font-size:16px;
     outline:none;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+    border-right:2px solid #cccccc;
 }
 
 .broyStai {
-    width:100px;
+    width:150px;
     height:100px;
-}
-
-.broyStai label {
-    width:100px;
-    height:20px;
-    text-align:center;
+    
 }
 
 .broyStai select {
-    width:100px;
+    width:150px;
     height:100px;
     font-family:bg1;
     font-size:16px;
     outline:none;
+    text-align:center;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
 }
 
 #searchSubmit {
     width:160px;
     height:100px;
-    margin-top:20px;
     font-family:bg1;
     font-size:16px;
     outline:none;
+    background:rgba(76,103,161,1);
+    color:#ffffff;
+    border:2px solid rgba(76,103,161,1);
+
 }
+
+#searchSubmit:hover{    
+    background:rgba(76,103,161,0.8);
+    cursor:pointer;
+    border:2px solid rgba(76,103,161,0.8);
+}
+
 
 #background {
     width: 100%; 
