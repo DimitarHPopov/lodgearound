@@ -66,23 +66,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LaModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>LaModel.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="LaModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>LaModel.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="LaModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LaModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="LaModel.edmx.diagram">
       <DependentUpon>LaModel.edmx</DependentUpon>
     </None>
@@ -92,17 +88,23 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LaModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LaModel.edmx</DependentUpon>
-      <LastGenOutput>LaModel.Context.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\LodgeAround.Entity\LodgeAround.Entity.csproj">
       <Project>{9cd1f12c-b247-4282-b66c-d18e366afb61}</Project>
       <Name>LodgeAround.Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="LaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LaModel.Context.tt">
+      <DependentUpon>LaModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LaModel.Context.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
