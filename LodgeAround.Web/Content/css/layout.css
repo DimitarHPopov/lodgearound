@@ -24,7 +24,6 @@ header{
 
 .headerTopLine{
 	width:100%;
-	height:52px;
 	overflow:hidden;
     position:absolute;
     top:0;
@@ -55,6 +54,68 @@ header{
 	color:rgba(76,103,161,0.7);
 	cursor:pointer;
 }
+
+.loged li {
+    display:block;
+    padding:1px;
+    overflow:hidden;
+}
+
+.lnr-bubble {
+    color: #ffffff;
+    font-family:icons;
+    font-size:34px;
+}
+
+.messages h1 {
+    font-family:bg1;
+    font-size:16px;
+    padding:9px 10px;
+}
+
+.messages:hover {
+    cursor:pointer
+}
+
+.logedProf div{
+    width:30px;
+    height:30px;
+    display:block;
+    background:url(../imgs/profPic.jpg);
+    border-radius:50%;
+    border:3px solid #ffffff;
+    
+}
+
+.logedProf h1 {
+    font-family:bg1;
+    font-size:16px;
+    padding:9px 10px;
+}
+
+.logedProf:hover {
+    cursor:pointer;
+}
+
+.lnr-power-switch {
+    color: #ffffff;
+    font-family:icons;
+    font-size:34px;
+}
+
+ .lnr-power-switch:hover {
+    cursor:pointer;
+    }
+
+.lnr-cross{
+    color: #ffffff;
+    font-family:icons;
+    font-size:30px;
+}
+
+    .lnr-cross:hover {
+    cursor:pointer;
+    }
 
 .headerContainer{
 	width:960px;
@@ -108,9 +169,39 @@ header{
     src:url(../fonts/BGT65__C.ttf);
 }
 
+@font-face{
+    font-family:icons;
+    src:url(../fonts/Linearicons-Free.ttf);
+}
+
 .homeContainer{
 	width:960px;
 	margin:50px auto;
+    overflow:hidden;
+}
+
+.mainTitles {
+    width:250px;
+    margin:50px auto;
+    overflow:hidden;
+}
+
+.mainTitles h1{
+    text-align:center;
+    font-family:bg1;
+    margin-left:20px;
+}
+
+.lnr-apartment{
+    color: #000000;
+    font-family:icons;
+    font-size:34px;
+}
+
+.lnr-magnifier{
+    color: #000000;
+    font-family:icons;
+    font-size:34px;
 }
 
 .landlordLogin{
@@ -713,6 +804,135 @@ header{
 	cursor:pointer;
 }
 
+.searchForm {
+    width:960px;
+    margin:100px auto;
+    display:block;
+    overflow:hidden;
+    font-family:bg1;
+
+}
+
+.selected {
+    text-align:center;
+    border-bottom:2px solid #cccccc;
+}
+
+.raion {
+    width:250px;
+    height:100px;
+}
+
+.raion select {
+    width:250px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+    border-right:2px solid #cccccc;
+}
+
+.kvartal {
+    width:250px;
+    height:100px;
+
+}
+
+.kvartal select {
+    width:250px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+    border-right:2px solid #cccccc;
+}
+
+.tipImot {
+    width:150px;
+    height:100px;
+}
+
+.tipImot select {
+    width:150px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+    border-right:2px solid #cccccc;
+}
+
+.broyStai {
+    width:150px;
+    height:100px;
+    
+}
+
+.broyStai select {
+    width:150px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+    text-align:center;
+    border:2px solid #f1f1f1;
+    padding:5px;
+    background:#f1f1f1;
+}
+
+#searchSubmit {
+    width:160px;
+    height:100px;
+    font-family:bg1;
+    font-size:16px;
+    outline:none;
+    background:rgba(76,103,161,1);
+    color:#ffffff;
+    border:2px solid rgba(76,103,161,1);
+
+}
+
+#searchSubmit:hover{    
+    background:rgba(76,103,161,0.8);
+    cursor:pointer;
+    border:2px solid rgba(76,103,161,0.8);
+}
+
+
+#background {
+    width: 100%; 
+    height: 600px;
+    position:relative;
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+#how_it_works{
+    background:white;
+    height:100%;
+    width:100%;
+    display:none;
+    background-color:rgba(76,103,161,0.7);
+}
+.close_how_it_works
+{
+    margin:20px;
+}
+
 .fLeft{
 	float:left;
 }
@@ -798,60 +1018,35 @@ header{
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-header{
-	width:480px;
-}
-.headerContainer{
-	width:480px;
-}
-.headerContainer h1{
-	width:380px;
-	margin:0 auto;
-}
-.headerContainer h2{
-	width:380px;
-	margin:0 auto;
-}
+    header {
+        width: 480px;
+    }
 
-.homeContainer{
-	width:480px;
-}
-.landlordLogin{
-	width:480px;
-	margin:0;
-}
-.renterLogin{
-	width:480px;
-	margin:20px 0;
-}
-}
+    .headerContainer {
+        width: 480px;
+    }
 
-#background {
-    width: 100%; 
-    height: 600px;
-    position:relative;
-    left: 0px; 
-    top: 0px; 
-    z-index: 0;
-}
+        .headerContainer h1 {
+            width: 380px;
+            margin: 0 auto;
+        }
 
-.stretch {
-    width:100%;
-    height:100%;
-}
+        .headerContainer h2 {
+            width: 380px;
+            margin: 0 auto;
+        }
 
-#how_it_works{
-    background:white;
-    height:100%;
-    width:100%;
-    display:none;
-    background-color:rgba(76,103,161,0.7);
-}
-.close_how_it_works
-{
-    margin:20px;
-    border:2px solid white;
-    border-radius:50px 50px;
-    padding:10px 15px;
-    color:white;
+    .homeContainer {
+        width: 480px;
+    }
+
+    .landlordLogin {
+        width: 480px;
+        margin: 0;
+    }
+
+    .renterLogin {
+        width: 480px;
+        margin: 20px 0;
+    }
 }

@@ -160,6 +160,7 @@
     <Content Include="Content\imgs\landlord2.png" />
     <Content Include="Content\imgs\myj1.jpg" />
     <Content Include="Content\imgs\myj2.jpg" />
+    <Content Include="Content\imgs\profPic.jpg" />
     <Content Include="Content\imgs\renter.png" />
     <Content Include="Content\imgs\Untitled-1 - Copy.jpg" />
     <Content Include="Content\imgs\Untitled-1.jpg" />
@@ -176,6 +177,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\Linearicons-Free.ttf" />
     <None Include="scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="scripts\jquery-2.2.0.js" />
     <Content Include="scripts\jquery-2.2.0.min.js" />

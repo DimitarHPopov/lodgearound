@@ -14,41 +14,41 @@
         <div class="float_right close_how_it_works lnr-cross" onclick="closeHowItWorks()"></div>
     </div>
 
-    <!--================================HEADER=====================================-->
-    <header>
+<!--================================HEADER=====================================-->
+<header>
 
-        <div>
-            <div id="background">
-                <img src="/Content/imgs/ironman44.jpg" class="stretch" alt="" />
-                <div class="headerTopLine">
-                    <span class="logoTop fLeft">LodgeAround</span>
-                    <ul class="fRight">
-                        <a href="#loginReg"><li class="fLeft loginReg">ВХОД</li></a>
-                        <a href="#loginReg"><li class="fLeft loginReg">РЕГИСТРАЦИЯ</li></a>
-                    </ul>
-                    <ul class="fRight loged">
-                        <li class="fLeft messages"><h1 class="fLeft">СЪОБЩЕНИЯ</h1><span class="lnr-bubble fLeft"></span></li>
-                        <li class="fLeft logedProf"><h1 class="fLeft">ГЕОРГИ</h1><div class="fLeft"></div></li>
-                        <li class="fLeft logout"><span class="lnr-power-switch fLeft"></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="headerContainer">
-
-                <h1>ПО-ДОБРИЯТ НАЧИН ЗА НАЕМАНЕ</h1>
-                <h2>Социалната мрежа на София за отдаване и наемане на имоти</h2>
-                <a onclick="showHowItWorks()"><span>как работи</span></a>
+    <div>
+        <div id="background">
+            <img src="/Content/imgs/ironman44.jpg" class="stretch" alt="" />
+            <div class="headerTopLine">
+                <span class="logoTop fLeft">LodgeAround</span>
+                <ul class="fRight">
+                    <a href="#loginReg"><li class="fLeft loginReg">ВХОД</li></a>
+                    <a href="#loginReg"><li class="fLeft loginReg">РЕГИСТРАЦИЯ</li></a>
+                </ul>
+                <ul class="fRight loged">
+                    <li class="fLeft messages"><h1 class="fLeft">СЪОБЩЕНИЯ</h1><span class="lnr-bubble fLeft"></span></li>
+                    <li class="fLeft logedProf"><h1 class="fLeft">ГЕОРГИ</h1><div class="fLeft"></div></li>
+                    <li class="fLeft logout"><span class="lnr-power-switch fLeft"></span></li>
+                </ul>
             </div>
         </div>
-    </header>
-    <!--================================LOGIN FORMS=====================================-->
-    <div class="homeContainer" id="loginReg">
-        <div class="mainTitles">
-            <span class="lnr-apartment fLeft"></span>
-            <h1 class="fLeft">ВХОД</h1>
+
+        <div class="headerContainer">
+
+            <h1>ПО-ДОБРИЯТ НАЧИН ЗА НАЕМАНЕ</h1>
+            <h2>Социалната мрежа на София за отдаване и наемане на имоти</h2>
+            <a onclick="showHowItWorks()"><span>как работи</span></a>
         </div>
-        <!--================================LANDLORD LOGIN=====================================-->
+    </div>
+</header>
+<!--================================LOGIN FORMS=====================================-->
+<div class="homeContainer" id="loginReg">
+    <div class="mainTitles">
+        <span class="lnr-apartment fLeft"></span>
+        <h1 class="fLeft">ВХОД</h1>
+    </div>
+<!--================================LANDLORD LOGIN=====================================-->
         <section class="fLeft landlordLogin">
             <span class="landlordAvatar">
                 <div></div>
@@ -90,12 +90,12 @@
                     <a href="#"><input id="submitReg" type="submit" value="ПОТВЪРДИ"></a>
                 </form>
             </div>
-            <div class="regButton" onclick="openReg('landLordRegformPad')">
+            <div class="regButton"  onclick="openReg('landLordRegformPad')">
                 <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
             </div>
         </section>
 
-        <!--================================RENTER LOGIN=====================================-->
+<!--================================RENTER LOGIN=====================================-->
         <section class="fLeft renterLogin">
             <span class="renterAvatar">
                 <div></div>
@@ -141,48 +141,50 @@
                 <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
             </div>
         </section>
-    </div>
-    <!--================================SEARCH FORM=====================================-->
+</div>
+<!--================================SEARCH FORM=====================================-->
     <div class="mainTitles">
         <span class="lnr-magnifier fLeft"></span>
         <h1 class="fLeft">ТЪРСЕНЕ</h1>
     </div>
-    <form class="searchForm">
-        <div class="raion fLeft">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Избери Район</option>
-                <option value="saab">Бояна</option>
-                <option value="opel">Драгалевци</option>
-                <option value="audi">Симеоново</option>
-            </select>
-        </div>
-        <div class="kvartal fLeft">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Избери Квартал</option>
-                <option value="saab">Бояна</option>
-                <option value="opel">Драгалевци</option>
-                <option value="audi">Симеоново</option>
-            </select>
-        </div>
-        <div class="tipImot fLeft">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Тип Имот</option>
-                <option value="saab">Бояна</option>
-                <option value="opel">Драгалевци</option>
-                <option value="audi">Симеоново</option>
-            </select>
-        </div>
-        <div class="broyStai fLeft">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Брой стаи</option>
-                <option value="saab">2</option>
-                <option value="opel">3</option>
-                <option value="audi">4</option>
-            </select>
-        </div>
-        <a href="#"><input id="searchSubmit" class="fLeft" type="submit" value="ТЪРСЕНЕ"></a>
-    </form>
-    <!--================================FOOTER=====================================-->
-    <footer></footer>
+<form class="searchForm">
+    <div class="raion fLeft">
+        <select multiple class="fLeft">
+            <option value="volvo" class="selected" disabled>Избери Район</option>
+            <option value="saab">Бояна</option>
+            <option value="opel">Драгалевци</option>
+            <option value="audi">Симеоново</option>
+        </select>
+    </div>
+    <div class="kvartal fLeft">
+        <select multiple class="fLeft">
+            <option value="volvo" class="selected" disabled>Избери Квартал</option>
+            <option value="saab">Бояна</option>
+            <option value="opel">Драгалевци</option>
+            <option value="audi">Симеоново</option>
+        </select>
+    </div>
+    <div class="tipImot fLeft">
+        <select multiple class="fLeft">
+            <option value="volvo" class="selected" disabled>Тип Имот</option>
+            <option value="saab">Бояна</option>
+            <option value="opel">Драгалевци</option>
+            <option value="audi">Симеоново</option>
+        </select>
+    </div>
+    <div class="broyStai fLeft">
+        <select multiple class="fLeft">
+            <option value="volvo" class="selected" disabled>Брой стаи</option>
+            <option value="saab">2</option>
+            <option value="opel">3</option>
+            <option value="audi">4</option>
+        </select>
+    </div>
+    <a href="#"><input id="searchSubmit" class="fLeft" type="submit" value="ТЪРСЕНЕ"></a>
+</form>
+<!--================================FOOTER=====================================-->
+<footer>
+
+</footer>
 </body>
 </html>
