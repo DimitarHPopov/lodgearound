@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace LodgeAround.Web.Controllers
 {
+    [Authorize(Roles = "Admin,Renter")]
     public class AccountController : Controller
     {
         // GET: Account

@@ -27,7 +27,7 @@ namespace LodgeAround.Services.Administration
         {
             try
             {
-                string hashPass = Common.Utility.ConvertToBase64(purePassword);
+                string hashPass = Common.Utility.GetHash(purePassword);
 
                 return (from u in _repository.Queryable().Include("UserInfos")
                         where u.UserName == userName
@@ -39,6 +39,61 @@ namespace LodgeAround.Services.Administration
             {
                 return null;
             }
+        }
+
+        public Roles GetUserRole(string userName)
+        {
+            try
+            {
+                return (from u in _repository.Queryable().Include("Roles")
+                        where u.UserName == userName
+                        select u.Roles).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public bool IsUserInRole(string username, string roleName)
+        {
+            try
+            {
+                return (from u in _repository.Queryable().Include("Roles")
+                        where u.UserName == username
+                        select u.Roles).FirstOrDefault().Name == roleName;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public string[] GetRolesForUser(string username)
+        {
+            try
+            {
+                return new string[] { (from u in _repository.Queryable().Include("Roles")
+                        where u.UserName == username
+                        select u.Roles).FirstOrDefault().Name };
+            }
+            catch (Exception ex)
+            {
+                return new string[] { };
+            }
+        }
+        public string[] GetAllRoles()
+        {
+            try
+            {
+                return (from r in _repository.GetRepository<Roles>().Queryable()
+                        select r.Name).ToArray();
+            }
+            catch (Exception ex)
+            {
+                return new string[] { };
+            }
+
         }
     }
 }

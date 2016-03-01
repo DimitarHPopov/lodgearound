@@ -13,13 +13,13 @@ namespace LodgeAround.Web.Code
         private ILogin _service;
         public CustomMembershipProvider()
         {
-            _service = (ILogin)UnityConfig.GetConfiguredContainer().Resolve(typeof(ILogin), "", null);
+            _service = (ILogin)UnityConfig.GetConfiguredContainer().Resolve(typeof(ILogin), "");
         }
         public override string ApplicationName
         {
             get
             {
-                return "LodgeAround.Web";
+                return "/LodgeAround.Web";
             }
 
             set

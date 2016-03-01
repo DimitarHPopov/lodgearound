@@ -11,19 +11,31 @@ namespace LodgeAround.Web.Code
 {
     public class Environment : IEnvironment
     {
-        public static string GetFullName(string username)
+        public static Users CurrentUser
         {
-            var container = new Microsoft.Practices.Unity.UnityContainer();
-
-            var user = ((ILogin)UnityConfig.GetConfiguredContainer().Resolve(typeof(ILogin), string.Empty)).GetUserByName(username);
-
-            if (user != null)
+            get
             {
-                return user.UserInfos.FullName;
-            }
+                if (HttpRuntime.Cache[HttpContext.Current.User.Identity.Name] == null)
+                {
+                    var user = ((ILogin)UnityConfig.GetConfiguredContainer().Resolve(typeof(ILogin), string.Empty)).GetUserByName(HttpContext.Current.User.Identity.Name);
 
-            return string.Empty;
+                    if (user != null)
+                    {
+                        HttpRuntime.Cache.Insert(HttpContext.Current.User.Identity.Name,
+                            user,
+                            null,
+                            System.Web.Caching.Cache.NoAbsoluteExpiration, new TimeSpan(0, 20, 0));
+                    }
+                    else
+                    {
+                        HttpContext.Current.Response.Redirect("Account/Login");
+                    }
+                }
+
+                return HttpRuntime.Cache[HttpContext.Current.User.Identity.Name] as Users;
+            }
         }
+
         public Users LoggedUser
         {
             get

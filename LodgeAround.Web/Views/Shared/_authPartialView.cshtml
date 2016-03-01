@@ -1,0 +1,24 @@
+﻿
+<div id="background">
+    <img src="/Content/imgs/ironman44.jpg" class="stretch" alt="" />
+    <div class="headerTopLine">
+        <span class="logoTop fLeft">LodgeAround</span>
+
+        @if (!HttpContext.Current.User.Identity.IsAuthenticated)
+        {
+            <ul class="fRight">
+                <a href="#loginReg"><li class="fLeft loginReg">ВХОД</li></a>
+                <a href="#loginReg"><li class="fLeft loginReg">РЕГИСТРАЦИЯ</li></a>
+            </ul>
+        }
+        else
+        {
+            <ul class="fRight loged">
+                <li class="fLeft messages"><h1 class="fLeft">СЪОБЩЕНИЯ</h1><span class="lnr-bubble fLeft"></span></li>
+                <li class="fLeft logedProf"><h1 class="fLeft">@LodgeAround.Web.Code.Environment.CurrentUser.UserInfos.FullName</h1><div class="fLeft"></div></li>
+                <li class="fLeft logout"><a href="@Url.Action("LogOff", "Home")" class="lnr-power-switch fLeft"></a></li>
+            </ul>
+        }
+    </div>
+</div>
+

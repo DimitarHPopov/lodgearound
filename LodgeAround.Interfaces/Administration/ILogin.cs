@@ -11,6 +11,10 @@ namespace LodgeAround.Interfaces.Administration
     {
         LodgeAround.Entity.Data.Users GetUserByName(string userName);
         LodgeAround.Entity.Data.Users GetUserByNameAndPassword(string userName, string purePassword);
+        Roles GetUserRole(string userName);
+        bool IsUserInRole(string username, string roleName);
+        string[] GetRolesForUser(string username);
+        string[] GetAllRoles();
     }
 }
 

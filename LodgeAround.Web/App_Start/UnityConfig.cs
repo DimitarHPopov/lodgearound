@@ -6,6 +6,8 @@ using Repository.Pattern.UnitOfWork;
 using Repository.Pattern.Ef6;
 using LodgeAround.Interfaces.Administration;
 using LodgeAround.Services.Administration;
+using Repository.Pattern.Repositories;
+using LodgeAround.Entity.Data;
 
 namespace LodgeAround.Web.App_Start
 {
@@ -46,7 +48,9 @@ namespace LodgeAround.Web.App_Start
             container
                 .RegisterType<IDataContextAsync, Data.LodgearoundEntities>(new PerRequestLifetimeManager())
                 .RegisterType<IUnitOfWorkAsync, UnitOfWork>(new PerRequestLifetimeManager())
-                .RegisterType<ILogin, Login>();
+                .RegisterType<IRepositoryAsync<Users>, Repository<Users>>()
+                .RegisterType<ILogin, Login>()
+                .RegisterType<IEnvironment, Code.Environment>();
 
         }
     }
