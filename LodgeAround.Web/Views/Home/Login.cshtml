@@ -1,0 +1,19 @@
+﻿@model LodgeAround.Entity.Custom.LoginForm
+
+@{
+    ViewBag.Title = "Вход";
+    Layout = "~/Views/Shared/_rootlayout.cshtml";
+}
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.TextBoxFor(m => m.UserName, new { id = "eMailLand", placeholder = "E-Mail Address" })
+    @Html.PasswordFor(m => m.Password, new { id = "passLand", placeholder = "Password" })
+    <input id="submitLand" type="submit" value="ВХОД">
+    <div class="rememberMe">
+        <input class="fLeft" id="remember" type="checkbox" name="signed">
+        <label class="fLeft">ЗАПОМНИ МЕ</label>
+        <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
+    </div>
+}
