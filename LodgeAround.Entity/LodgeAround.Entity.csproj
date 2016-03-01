@@ -62,9 +62,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Custom\LoginForm.cs" />
     <Compile Include="Data\LaModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>LaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Logins.cs">
       <DependentUpon>LaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Roles.cs">
@@ -76,6 +80,7 @@
     <Compile Include="Data\Users.cs">
       <DependentUpon>LaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\UserInfos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

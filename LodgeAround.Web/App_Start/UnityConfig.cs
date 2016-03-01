@@ -1,6 +1,11 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using Repository.Pattern.DataContext;
+using Repository.Pattern.UnitOfWork;
+using Repository.Pattern.Ef6;
+using LodgeAround.Interfaces.Administration;
+using LodgeAround.Services.Administration;
 
 namespace LodgeAround.Web.App_Start
 {
@@ -37,6 +42,12 @@ namespace LodgeAround.Web.App_Start
 
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
+
+            container
+                .RegisterType<IDataContextAsync, Data.LodgearoundEntities>(new PerRequestLifetimeManager())
+                .RegisterType<IUnitOfWorkAsync, UnitOfWork>(new PerRequestLifetimeManager())
+                .RegisterType<ILogin, Login>();
+
         }
     }
 }

@@ -12,6 +12,12 @@ namespace LodgeAround.Web.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult Login()
+        {
             
         }
     }
