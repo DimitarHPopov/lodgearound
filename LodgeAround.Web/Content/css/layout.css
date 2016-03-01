@@ -64,17 +64,36 @@ header{
 .lnr-bubble {
     color: #ffffff;
     font-family:icons;
-    font-size:34px;
+    font-size:20px;
 }
+
+.lnr-bubble span {
+    display:block;
+    height:24px;
+    font-size:20px;
+    font-family:bg1;
+    line-height:16px;
+    margin-right:5px;
+}
+
+.messages{
+   padding:8px 0 !important;
+   font-family:bg1;
+}
+
+ .lnr-bubble:hover {
+ color:#cccccc;
+ }
 
 .messages h1 {
     font-family:bg1;
     font-size:16px;
-    padding:9px 10px;
+    padding:2px 10px;
 }
 
 .messages:hover {
-    cursor:pointer
+    cursor:pointer;
+    color:#cccccc !important;
 }
 
 .logedProf div{
@@ -85,6 +104,10 @@ header{
     border-radius:50%;
     border:3px solid #ffffff;
     
+}
+
+ .logedProf div:hover {
+    border:3px solid #cccccc;
 }
 
 .logedProf h1 {
@@ -100,11 +123,13 @@ header{
 .lnr-power-switch {
     color: #ffffff;
     font-family:icons;
-    font-size:34px;
+    font-size:20px;
+    padding:8px 0;
 }
 
  .lnr-power-switch:hover {
     cursor:pointer;
+    color:#cccccc;
     }
 
 .lnr-cross{
@@ -180,13 +205,13 @@ header{
     overflow:hidden;
 }
 
-.mainTitles {
-    width:250px;
+.mainTitleVhod {
+    width:155px;
     margin:50px auto;
     overflow:hidden;
 }
 
-.mainTitles h1{
+.mainTitleVhod h1{
     text-align:center;
     font-family:bg1;
     margin-left:20px;
@@ -196,6 +221,18 @@ header{
     color: #000000;
     font-family:icons;
     font-size:34px;
+}
+
+.mainTitleTyrsene {
+    width:230px;
+    margin:50px auto;
+    overflow:hidden;
+}
+
+.mainTitleTyrsene h1{
+    text-align:center;
+    font-family:bg1;
+    margin-left:20px;
 }
 
 .lnr-magnifier{
@@ -820,12 +857,11 @@ header{
 
 .raion {
     width:250px;
-    height:100px;
 }
 
 .raion select {
     width:250px;
-    height:100px;
+    height:150px;
     font-family:bg1;
     font-size:16px;
     outline:none;
@@ -837,13 +873,11 @@ header{
 
 .kvartal {
     width:250px;
-    height:100px;
-
 }
 
 .kvartal select {
     width:250px;
-    height:100px;
+    height:150px;
     font-family:bg1;
     font-size:16px;
     outline:none;
@@ -855,12 +889,11 @@ header{
 
 .tipImot {
     width:150px;
-    height:100px;
 }
 
 .tipImot select {
     width:150px;
-    height:100px;
+    height:150px;
     font-family:bg1;
     font-size:16px;
     outline:none;
@@ -871,14 +904,12 @@ header{
 }
 
 .broyStai {
-    width:150px;
-    height:100px;
-    
+    width:150px;    
 }
 
 .broyStai select {
     width:150px;
-    height:100px;
+    height:150px;
     font-family:bg1;
     font-size:16px;
     outline:none;
@@ -890,7 +921,7 @@ header{
 
 #searchSubmit {
     width:160px;
-    height:100px;
+    height:150px;
     font-family:bg1;
     font-size:16px;
     outline:none;
