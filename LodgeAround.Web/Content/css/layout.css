@@ -106,18 +106,19 @@ header{
     
 }
 
- .logedProf div:hover {
-    border:3px solid #cccccc;
+ .logedProf div:hover{
+    color:#cccccc;
 }
 
 .logedProf h1 {
     font-family:bg1;
-    font-size:16px;
-    padding:9px 10px;
+    font-size:20px;
+    padding:7px 10px;
 }
 
-.logedProf:hover {
+.logedProf:hover{
     cursor:pointer;
+    color:#cccccc;
 }
 
 .lnr-power-switch {
