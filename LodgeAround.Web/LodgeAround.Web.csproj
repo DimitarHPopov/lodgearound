@@ -158,6 +158,9 @@
     <Content Include="Content\imgs\jena3.jpg" />
     <Content Include="Content\imgs\landlord.png" />
     <Content Include="Content\imgs\landlord2.png" />
+    <Content Include="Content\imgs\lodge_logo_white.png" />
+    <Content Include="Content\imgs\logo45x48.png" />
+    <Content Include="Content\imgs\logo_95x95.png" />
     <Content Include="Content\imgs\myj1.jpg" />
     <Content Include="Content\imgs\myj2.jpg" />
     <Content Include="Content\imgs\profPic.jpg" />
@@ -178,6 +181,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\Linearicons-Free.ttf" />
+    <Content Include="Content\fonts\lodge-medium.otf" />
     <None Include="scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="scripts\jquery-2.2.0.js" />
     <Content Include="scripts\jquery-2.2.0.min.js" />

@@ -3,23 +3,36 @@
 	padding:0;
 }
 
-header{
-	/*background:url(../imgs/ironman44.jpg) no-repeat -20px;\
-	height:600px;*/
-}
-
 .float_right{
     float:right;
 }
 
+.logoBox{
+    width:300px;
+}
+
+.logoBox h1 {
+    margin-top:25px;
+    font-size:25px;
+   color:#ffa300;
+   font-family:lodge;
+}
+
+.logoBox h2 {
+    margin-top:25px;
+    font-size:25px;
+    color:#55b475;
+    font-family:lodge;
+}
+
 .logoTop{
+    width:190px;
+    height:190px;
 	display:block;
-	font-family:bg1;
-	color:#ffffff;
-	font-weight:bold;
-	font-size:20px;
-	margin:16px 10px;
-    cursor:default;
+    background:url(../imgs/lodge_logo_white.png);
+	margin:-60px;
+    cursor:pointer;
+    transform:scale(0.25);
 }
 
 .headerTopLine{
@@ -70,9 +83,9 @@ header{
 .lnr-bubble span {
     display:block;
     height:24px;
-    font-size:20px;
+    font-size:16px;
     font-family:bg1;
-    line-height:16px;
+    line-height:20px;
     margin-right:5px;
 }
 
@@ -112,8 +125,8 @@ header{
 
 .logedProf h1 {
     font-family:bg1;
-    font-size:20px;
-    padding:7px 10px;
+    font-size:16px;
+    padding:9px 10px;
 }
 
 .logedProf:hover{
@@ -198,6 +211,11 @@ header{
 @font-face{
     font-family:icons;
     src:url(../fonts/Linearicons-Free.ttf);
+}
+
+@font-face{
+    font-family:lodge;
+    src:url(../fonts/lodge-medium.otf);
 }
 
 .homeContainer{
