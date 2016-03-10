@@ -161,6 +161,7 @@
     <Content Include="Content\imgs\lodge_logo_white.png" />
     <Content Include="Content\imgs\logo45x48.png" />
     <Content Include="Content\imgs\logo_95x95.png" />
+    <Content Include="Content\imgs\logo_icon.png" />
     <Content Include="Content\imgs\myj1.jpg" />
     <Content Include="Content\imgs\myj2.jpg" />
     <Content Include="Content\imgs\profPic.jpg" />
