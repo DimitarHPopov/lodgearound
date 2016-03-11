@@ -16,6 +16,12 @@ namespace LodgeAround.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
