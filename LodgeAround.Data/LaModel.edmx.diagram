@@ -10,6 +10,8 @@
         <EntityTypeShape EntityType="LodgearoundModel.Users" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="LodgearoundModel.FK__Users__RoleID__1DE57479" ManuallyRouted="false" />
         <AssociationConnector Association="LodgearoundModel.FK__Users__UserInfos__1FCDBCEB" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LodgearoundModel.Logins" Width="1.5" PointX="5.25" PointY="1.75" />
+        <AssociationConnector Association="LodgearoundModel.FK__Logins__UserId__267ABA7A" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

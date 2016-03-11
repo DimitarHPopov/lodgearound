@@ -14,6 +14,11 @@ namespace LodgeAround.Entity.Data
     using Repository.Pattern.Ef6;
     public partial class Users : Entity
     {
+        public Users()
+        {
+            this.Logins = new HashSet<Logins>();
+        }
+    
         public int ID { get; set; }
         public string UserName { get; set; }
         public string PasswordHash { get; set; }
@@ -28,5 +33,6 @@ namespace LodgeAround.Entity.Data
     
         public virtual Roles Roles { get; set; }
         public virtual UserInfos UserInfos { get; set; }
+        public virtual ICollection<Logins> Logins { get; set; }
     }
 }

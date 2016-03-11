@@ -30,5 +30,6 @@ namespace LodgeAround.Data
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<UserInfos> UserInfos { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Logins> Logins { get; set; }
     }
 }

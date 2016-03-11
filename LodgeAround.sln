@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LodgeAround.Data", "LodgeAr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LodgeAround.Common", "LodgeAround.Common\LodgeAround.Common.csproj", "{530B9913-B822-478B-B163-CDBE27211344}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LodgeAround.Interfaces", "LodgeAround.Interfaces\LodgeAround.Interfaces.csproj", "{6F719501-9038-48BC-9719-EB73D763DB84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{530B9913-B822-478B-B163-CDBE27211344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{530B9913-B822-478B-B163-CDBE27211344}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{530B9913-B822-478B-B163-CDBE27211344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F719501-9038-48BC-9719-EB73D763DB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F719501-9038-48BC-9719-EB73D763DB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F719501-9038-48BC-9719-EB73D763DB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F719501-9038-48BC-9719-EB73D763DB84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

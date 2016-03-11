@@ -89,6 +89,10 @@
       <HintPath>..\packages\Repository.Pattern.Ef6.3.3.5.1\lib\net451\Repository.Pattern.Ef6.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Service.Pattern, Version=3.3.5.1, Culture=neutral, PublicKeyToken=e598640c26ef2b0a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Service.Pattern.3.3.5.1\lib\net451\Service.Pattern.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -195,6 +199,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Code\CustomMembershipProvider.cs" />
+    <Compile Include="Code\CustomRoleProvider.cs" />
+    <Compile Include="Code\Environment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -212,6 +219,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="scripts\jquery-2.2.0.min.map" />
+    <Content Include="Views\Shared\_authPartialView.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Shared\_rootRentnerLayout.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -222,12 +233,27 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LodgeAround.Common\LodgeAround.Common.csproj">
+      <Project>{530b9913-b822-478b-b163-cdbe27211344}</Project>
+      <Name>LodgeAround.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LodgeAround.Data\LodgeAround.Data.csproj">
+      <Project>{ca823bbb-8d0f-4bc3-aa1d-a238281e72f0}</Project>
+      <Name>LodgeAround.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LodgeAround.Entity\LodgeAround.Entity.csproj">
       <Project>{9cd1f12c-b247-4282-b66c-d18e366afb61}</Project>
       <Name>LodgeAround.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LodgeAround.Interfaces\LodgeAround.Interfaces.csproj">
+      <Project>{6f719501-9038-48bc-9719-eb73d763db84}</Project>
+      <Name>LodgeAround.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LodgeAround.Services\LodgeAround.Services.csproj">
+      <Project>{e512ab18-9666-482f-b165-6307460ae805}</Project>
+      <Name>LodgeAround.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
