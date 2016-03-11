@@ -489,7 +489,7 @@
 	background:url(../imgs/chevron_white_32.png);
 }
 
-    .chevronRight:hover {
+   .regButton:hover .chevronRight {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -498,6 +498,17 @@
     -moz-transition:0.5s ease;
     -o-transition:0.5s ease;
     }
+
+   .open_reg_form:hover .chevronRight {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transition:0.5s ease;
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    }
+
 
 .registriraiSe{
 	width:250px;

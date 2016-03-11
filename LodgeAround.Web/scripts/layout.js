@@ -14,10 +14,12 @@ function closeHowItWorks()
 function openReg(name)
 {
     if ($('.' + name).is(":hidden")) {
+        $('.regButton').addClass('open_reg_form');
         $('.' + name).slideDown("slow");
     }
     else
     {
+        $('.regButton').removeClass('open_reg_form');
         $('.' + name).slideUp("slow");
 
     }
