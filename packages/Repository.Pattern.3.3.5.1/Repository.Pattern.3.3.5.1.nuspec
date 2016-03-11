@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Repository.Pattern</id>
+    <version>3.3.5.1</version>
+    <title>URF - Unit of Work &amp; (extensible/generic) Repositories Framework - Repository Pattern</title>
+    <authors>Le Long</authors>
+    <owners>Le Long</owners>
+    <projectUrl>https://genericunitofworkandrepositories.codeplex.com/</projectUrl>
+    <iconUrl>https://download-codeplex.sec.s-msft.com/Download?ProjectName=genericunitofworkandrepositories&amp;DownloadId=758639&amp;Build=20941</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This framework minimizes the surface area of your ORM technlogy from disseminating in your application. Framework provides an elegant way to implement a reusable and extensible Unit of Work and Repository pattern.</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>Repository Pattern</tags>
+  </metadata>
+</package>
