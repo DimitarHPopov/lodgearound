@@ -150,6 +150,7 @@
     <Content Include="Content\imgs\chevron-right-128.png" />
     <Content Include="Content\imgs\chevron_white_32.png" />
     <Content Include="Content\imgs\facebook.png" />
+    <Content Include="Content\imgs\footer.jpg" />
     <Content Include="Content\imgs\ironman.jpg" />
     <Content Include="Content\imgs\ironman2.jpg" />
     <Content Include="Content\imgs\ironman3.jpg" />
@@ -188,6 +189,9 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\Linearicons-Free.ttf" />
     <Content Include="Content\fonts\lodge-medium.otf" />
+    <Content Include="fonts\Linearicons-Free.ttf" />
+    <Content Include="fonts\lodge-medium.otf" />
+    <None Include="Properties\PublishProfiles\localServer.pubxml" />
     <None Include="scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="scripts\jquery-2.2.0.js" />
     <Content Include="scripts\jquery-2.2.0.min.js" />

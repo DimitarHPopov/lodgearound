@@ -2,10 +2,13 @@
 <div id="background">
     <img src="/Content/imgs/ironman44.jpg" class="stretch" alt="" />
     <div class="headerTopLine">
-        <span class="logoTop fLeft">LodgeAround</span>
-
+        <div class="logoBox">
+            <span class="logoTop fLeft"></span>
+            <h1 class="fLeft">Lodge</h1>
+            <h2 class="fLeft">Around</h2>
+        </div>
         @if (!HttpContext.Current.User.Identity.IsAuthenticated)
-        {
+            {
             <ul class="fRight">
                 <a href="#loginReg"><li class="fLeft loginReg">ВХОД</li></a>
                 <a href="#loginReg"><li class="fLeft loginReg">РЕГИСТРАЦИЯ</li></a>
@@ -21,4 +24,3 @@
         }
     </div>
 </div>
-
