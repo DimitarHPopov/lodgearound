@@ -12,27 +12,38 @@
 }
 
 .logoBox h1 {
-    margin-top:25px;
-    font-size:25px;
+   margin-top:15px;
+   font-size:20px;
    color:#ffffff;
    font-family:lodge;
+   cursor:pointer;
+}
+
+.logoBox h1:hover {
+    color:#ffa300;
 }
 
 .logoBox h2 {
-    margin-top:25px;
-    font-size:25px;
-    color:#55b475;
+    margin-top:15px;
+    font-size:20px;
+    color:#ffffff;
     font-family:lodge;
+    cursor:pointer;
+}
+
+.logoBox h2:hover {
+    color:#55b475;
+
 }
 
 .logoTop{
     width:190px;
     height:190px;
 	display:block;
-    background:url(../imgs/logo_colored.png);
-	margin:-60px;
+    background:url(../imgs/lodge_logo_white.png);
+	margin:-70px -70px 0 -50px;
     cursor:pointer;
-    transform:scale(0.25);
+    transform:scale(0.2);
 }
 
 .headerTopLine{
@@ -192,7 +203,8 @@
 	width:150px;
 	text-align:center;
 	color:#ffffff;
-	font-size:20px;	
+	font-size:20px;
+    cursor:pointer;
 }
 
 .headerContainer span:hover{
@@ -876,6 +888,7 @@
 
 .raion {
     width:250px;
+    float:left;
 }
 
 .raion select {
@@ -892,6 +905,7 @@
 
 .kvartal {
     width:250px;
+    float:left;
 }
 
 .kvartal select {
@@ -908,6 +922,7 @@
 
 .tipImot {
     width:150px;
+    float:left;
 }
 
 .tipImot select {
@@ -923,7 +938,8 @@
 }
 
 .broyStai {
-    width:150px;    
+    width:150px;  
+    float:left;  
 }
 
 .broyStai select {
@@ -947,6 +963,7 @@
     background:rgba(76,103,161,1);
     color:#ffffff;
     border:2px solid rgba(76,103,161,1);
+    float:left;
 
 }
 
@@ -956,6 +973,11 @@
     border:2px solid rgba(76,103,161,0.8);
 }
 
+
+footer {
+    background:url(../imgs/footer.jpg) repeat-x;
+    height:300px;
+}
 
 #background {
     width: 100%; 
@@ -1037,6 +1059,34 @@ header{
 	width:384px;
 	margin:0;
 }
+.searchForm {
+width:500px;
+}
+.raion select{
+    width:250px;
+    border-bottom:2px solid #cccccc;
+}
+.kvartal select{
+    width:250px;
+    border-right:none;
+    border-bottom:2px solid #cccccc;
+}
+.tipImot {
+    width:250px;
+}
+.tipImot select{
+    width:250px;
+}
+.broyStai {
+    width:250px;
+}
+.broyStai select{
+    width:250px;
+}
+#searchSubmit {
+    width:500px;
+    height:50px;
+}
 }
 
 /* Landscape phones and portrait tablets */
@@ -1063,6 +1113,43 @@ header{
 .renterLogin{
 	width:767px;
 	margin:20px 0;
+}
+.searchForm {
+width:767px;
+}
+.raion{
+    width:767px;
+}
+.raion select{
+    width:767px;
+    border-bottom:2px solid #cccccc;
+    text-align:center;
+}
+.kvartal{
+    width:767px;
+}
+.kvartal select{
+    width: 767px;
+    border-right:none;
+    border-bottom:2px solid #cccccc;
+    text-align:center;
+}
+.tipImot {
+    width:767px;
+}
+.tipImot select{
+    width:767px;
+    text-align:center;
+}
+.broyStai {
+    width:767px;
+}
+.broyStai select{
+    width:767px;
+}
+#searchSubmit {
+    width:767px;
+    height:50px;
 }
 }
 
@@ -1099,4 +1186,35 @@ header{
         width: 480px;
         margin: 20px 0;
     }
+.searchForm {
+width:480px;
+}
+.raion select{
+    width:480px;
+    border-right:none;
+    text-align:center;
+}
+.kvartal select{
+    width:480px;
+    border-right:none;
+    text-align:center;
+}
+.tipImot {
+    width:480px;
+}
+.tipImot select{
+    width:480px;
+    border-right:none;
+    text-align:center;
+}
+.broyStai {
+    width:480px;
+}
+.broyStai select{
+    width:480px;
+}
+#searchSubmit {
+    width:480px;
+    height:50px;
+}
 }
