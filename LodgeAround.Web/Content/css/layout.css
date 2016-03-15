@@ -106,7 +106,7 @@
 }
 
  .lnr-bubble:hover {
- color:#cccccc;
+ color:rgba(76,103,161,0.7);
  }
 
 .messages h1 {
@@ -117,7 +117,7 @@
 
 .messages:hover {
     cursor:pointer;
-    color:#cccccc !important;
+    color:rgba(76,103,161,0.7) !important;
 }
 
 .logedProf div{
@@ -131,7 +131,7 @@
 }
 
  .logedProf div:hover{
-    color:#cccccc;
+    color:rgba(76,103,161,0.7);
 }
 
 .logedProf h1 {
@@ -142,7 +142,7 @@
 
 .logedProf:hover{
     cursor:pointer;
-    color:#cccccc;
+    color:rgba(76,103,161,0.7);
 }
 
 .lnr-power-switch {
@@ -154,7 +154,7 @@
 
  .lnr-power-switch:hover {
     cursor:pointer;
-    color:#cccccc;
+    color:rgba(76,103,161,0.7);
     }
 
 .lnr-cross{
@@ -163,9 +163,9 @@
     font-size:30px;
 }
 
-    .lnr-cross:hover {
+.lnr-cross:hover {
     cursor:pointer;
-    }
+}
 
 .headerContainer{
 	width:960px;
@@ -339,16 +339,17 @@
 	height:40px;
 	padding:5px;
 	margin:20px auto;
-	background:rgba(242,155,0,0.5);
+	background:#ffffff;
 	border:2px solid #f29b00;
-	color:#ffffff;
+	color:rgba(76,103,161,1);;
 	font-family:bg1;
 	font-size:16px;
 	font-weight:bold;
 }
 
 #submitLand:hover{
-	background:rgba(242,155,0,1);
+	color:rgba(76,103,161,0.7);
+    cursor:pointer;
 }
 
 .rememberMe{
