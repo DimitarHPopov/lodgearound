@@ -16,7 +16,6 @@
 
     <!--================================HEADER=====================================-->
     <header>
-
         <div>
             <div id="background">
                 <img src="/Content/imgs/ironman44.jpg" class="stretch" alt="" />
@@ -47,146 +46,166 @@
         </div>
     </header>
     <!--================================LOGIN FORMS=====================================-->
-    <div class="homeContainer" id="loginReg">
-        <div class="mainTitleVhod">
-            <span class="lnr-apartment fLeft"></span>
-            <h1 class="fLeft">ВХОД</h1>
-        </div>
-        <!--================================LANDLORD LOGIN=====================================-->
-        <section class="fLeft landlordLogin">
-            <span class="landlordAvatar">
-                <div></div>
-            </span>
-            <h1>НАЕМОДАТЕЛ</h1>
-            <form>
-                <input id="eMailLand" type="email" name="email" placeholder="E-Mail Address">
-                <input id="passLand" type="password" name="pass" placeholder="Password">
-                <a href="#"><input id="submitLand" type="submit" value="ВХОД"></a>
-                <div class="rememberMe">
-                    <input class="fLeft" id="remember" type="checkbox" name="signed">
-                    <label class="fLeft">ЗАПОМНИ МЕ</label>
-                    <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
-                </div>
-            </form>
-            <div class="splitLine">
-                <span class="whiteLine100 fLeft"></span>
-                <span class="fLeft">или</span>
-                <span class="whiteLine100 fLeft"></span>
+    <div class="backImg">
+        <div class="homeContainer" id="loginReg">
+            <div class="mainTitleVhod">
+                <span class="lnr-apartment fLeft"></span>
+                <h1 class="fLeft">ВХОД</h1>
             </div>
-            <a href="#">
-                <div class="fbLogin">
-                    <span class="fLeft fbLogo"></span>
-                    <span class="fLeft fbVhod">вход с facebook</span>
-                </div>
-            </a>
-            <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
-            <div class="landLordRegformPad">
-                <form class="landLordRegform">
-                    <input id="firstName" type="text" name="fname" placeholder="First Name">
-                    <input id="lastName" type="text" name="lname" placeholder="Last Name">
-                    <span class="phoneNumber">
-                        <input class="fLeft" id="phone" name="phone_number" placeholder="359" size="3" maxlength="3" value="" type="text">
-                        <input class="fLeft" id="phone2" name="phone_number2" placeholder="887336227" size="9" maxlength="9" value="" type="text">
-                    </span>
-                    <input id="emailReg" type="email" name="email" placeholder="E-Mail Address">
-                    <input id="passReg" type="password" name="pass" placeholder="Password">
-                    <input id="passConf" type="password" name="pass" placeholder="Confirm Password">
-                    <a href="#"><input id="submitReg" type="submit" value="ПОТВЪРДИ"></a>
+            <!--================================LANDLORD LOGIN=====================================-->
+            <section class="fLeft landlordLogin">
+                <span class="landlordAvatar">
+                    <div></div>
+                </span>
+                <h1>НАЕМОДАТЕЛ</h1>
+                <form>
+                    <input id="eMailLand" type="email" name="email" placeholder="E-Mail Address">
+                    <input id="passLand" type="password" name="pass" placeholder="Password">
+                    <a href="#"><input id="submitLand" type="submit" value="ВХОД"></a>
+                    <div class="rememberMe">
+                        <input class="fLeft" id="remember" type="checkbox" name="signed">
+                        <label class="fLeft">ЗАПОМНИ МЕ</label>
+                        <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
+                    </div>
                 </form>
-            </div>
-            <div class="regButton" onclick="openReg('landLordRegformPad')">
-                <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
-            </div>
-        </section>
-
-        <!--================================RENTER LOGIN=====================================-->
-        <section class="fLeft renterLogin">
-            <span class="renterAvatar">
-                <div></div>
-            </span>
-            <h1>НАЕМАТЕЛ</h1>
-            <form>
-                <input id="eMailRent" type="email" name="email" placeholder="E-Mail Address">
-                <input id="passRent" type="password" name="pass" placeholder="Password">
-                <a href="#"><input id="submitRent" type="submit" value="ВХОД"></a>
-                <div class="rememberMe">
-                    <input class="fLeft" id="remember" type="checkbox" name="signed">
-                    <label class="fLeft">ЗАПОМНИ МЕ</label>
-                    <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
+                <div class="splitLine">
+                    <span class="whiteLine100 fLeft"></span>
+                    <span class="fLeft">или</span>
+                    <span class="whiteLine100 fLeft"></span>
                 </div>
-            </form>
-            <div class="splitLine">
-                <span class="whiteLine100 fLeft"></span>
-                <span class="fLeft">или</span>
-                <span class="whiteLine100 fLeft"></span>
-            </div>
-            <a href="#">
-                <div class="fbLogin">
-                    <span class="fLeft fbLogo"></span>
-                    <span class="fLeft fbVhod">вход с facebook</span>
+                <a href="#">
+                    <div class="fbLogin">
+                        <span class="fLeft fbLogo"></span>
+                        <span class="fLeft fbVhod">вход с facebook</span>
+                    </div>
+                </a>
+                <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
+                <div class="landLordRegformPad">
+                    <form class="landLordRegform">
+                        <input id="firstName" type="text" name="fname" placeholder="First Name">
+                        <input id="lastName" type="text" name="lname" placeholder="Last Name">
+                        <span class="phoneNumber">
+                            <input class="fLeft" id="phone" name="phone_number" placeholder="359" size="3" maxlength="3" value="" type="text">
+                            <input class="fLeft" id="phone2" name="phone_number2" placeholder="887336227" size="9" maxlength="9" value="" type="text">
+                        </span>
+                        <input id="emailReg" type="email" name="email" placeholder="E-Mail Address">
+                        <input id="passReg" type="password" name="pass" placeholder="Password">
+                        <input id="passConf" type="password" name="pass" placeholder="Confirm Password">
+                        <a href="#"><input id="submitReg" type="submit" value="ПОТВЪРДИ"></a>
+                    </form>
                 </div>
-            </a>
-            <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
-            <div class="renterRegformPad">
-                <form class="renterRegform">
-                    <input id="renterFirstName" type="text" name="fname" placeholder="First Name">
-                    <input id="renterLastName" type="text" name="lname" placeholder="Last Name">
-                    <span class="phoneNumber">
-                        <input id="renterPhone" name="phone_number" placeholder="359" class="fLeft element text" size="3" maxlength="3" value="" type="text">
-                        <input id="renterPhone2" name="phone_number2" placeholder="887336227" class="fLeft element text" size="9" maxlength="9" value="" type="text">
-                    </span>
-                    <input id="renterEmailReg" type="email" name="email" placeholder="E-Mail Address">
-                    <input id="renterPassReg" type="password" name="pass" placeholder="Password">
-                    <input id="renterPassConf" type="password" name="pass" placeholder="Confirm Password">
-                    <a href="#"><input id="renterSubmitReg" type="submit" value="ПОТВЪРДИ"></a>
+                <div class="regButton" onclick="openReg('landLordRegformPad')">
+                    <span class="registriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+                </div>
+            </section>
+            <!--================================RENTER LOGIN=====================================-->
+            <section class="fLeft renterLogin">
+                <span class="renterAvatar">
+                    <div></div>
+                </span>
+                <h1>НАЕМАТЕЛ</h1>
+                <form>
+                    <input id="eMailRent" type="email" name="email" placeholder="E-Mail Address">
+                    <input id="passRent" type="password" name="pass" placeholder="Password">
+                    <a href="#"><input id="submitRent" type="submit" value="ВХОД"></a>
+                    <div class="rememberMe">
+                        <input class="fLeft" id="remember" type="checkbox" name="signed">
+                        <label class="fLeft">ЗАПОМНИ МЕ</label>
+                        <a class="fLeft" href="#">ЗАБРАВЕНА ПАРОЛА?</a>
+                    </div>
                 </form>
-            </div>
-            <div class="renterRegButton regButton" onclick="openReg('renterRegformPad')">
-                <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
-            </div>
-        </section>
+                <div class="splitLine">
+                    <span class="whiteLine100 fLeft"></span>
+                    <span class="fLeft">или</span>
+                    <span class="whiteLine100 fLeft"></span>
+                </div>
+                <a href="#">
+                    <div class="fbLogin">
+                        <span class="fLeft fbLogo"></span>
+                        <span class="fLeft fbVhod">вход с facebook</span>
+                    </div>
+                </a>
+                <span class="ifNoAccount">ВСЕ ОЩЕ НЯМАТЕ РЕГИСТРАЦИЯ?</span>
+                <div class="renterRegformPad">
+                    <form class="renterRegform">
+                        <input id="renterFirstName" type="text" name="fname" placeholder="First Name">
+                        <input id="renterLastName" type="text" name="lname" placeholder="Last Name">
+                        <span class="phoneNumber">
+                            <input id="renterPhone" name="phone_number" placeholder="359" class="fLeft element text" size="3" maxlength="3" value="" type="text">
+                            <input id="renterPhone2" name="phone_number2" placeholder="887336227" class="fLeft element text" size="9" maxlength="9" value="" type="text">
+                        </span>
+                        <input id="renterEmailReg" type="email" name="email" placeholder="E-Mail Address">
+                        <input id="renterPassReg" type="password" name="pass" placeholder="Password">
+                        <input id="renterPassConf" type="password" name="pass" placeholder="Confirm Password">
+                        <a href="#"><input id="renterSubmitReg" type="submit" value="ПОТВЪРДИ"></a>
+                    </form>
+                </div>
+                <div class="renterRegButton regButton" onclick="openReg('renterRegformPad')">
+                    <span class="renterRegistriraiSe"><span class="fLeft chevronRight"></span>РЕГИСТРИРАЙ СЕ</span>
+                </div>
+            </section>
+        </div>
     </div>
-    <!--================================SEARCH FORM=====================================-->
-    <div class="mainTitleTyrsene">
-        <span class="lnr-magnifier fLeft"></span>
-        <h1 class="fLeft">ТЪРСЕНЕ</h1>
-    </div>
-    <form class="searchForm">
-        <div class="raion">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Избери Район</option>
-                <option value="saab">Бояна</option>
-                <option value="opel">Драгалевци</option>
-                <option value="audi">Симеоново</option>
-            </select>
+        <!--================================SEARCH FORM=====================================-->
+        <div class="mainTitleTyrsene">
+            <span class="lnr-magnifier fLeft"></span>
+            <h1 class="fLeft">ТЪРСЕНЕ</h1>
         </div>
-        <div class="kvartal">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Избери Квартал</option>
-                <option value="saab">Бояна</option>
-                <option value="opel">Драгалевци</option>
-                <option value="audi">Симеоново</option>
-            </select>
-        </div>
-        <div class="tipImot">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Тип Имот</option>
-                <option value="saab">Бояна</option>
-                <option value="opel">Драгалевци</option>
-                <option value="audi">Симеоново</option>
-            </select>
-        </div>
-        <div class="broyStai">
-            <select multiple class="fLeft">
-                <option value="volvo" class="selected" disabled>Брой стаи</option>
-                <option value="saab">2</option>
-                <option value="opel">3</option>
-                <option value="audi">4</option>
-            </select>
-        </div>
-        <a href="#"><input id="searchSubmit" type="submit" value="ТЪРСЕНЕ"></a>
-    </form>
+        <form class="searchForm">
+            <div class="raion">
+                <select multiple class="fLeft">
+                    <option value="volvo" class="selected" disabled>Избери Район</option>
+                    <option value="saab">Бояна</option>
+                    <option value="opel">Драгалевци</option>
+                    <option value="audi">Симеоново</option>
+                </select>
+            </div>
+            <div class="kvartal">
+                <select multiple class="fLeft">
+                    <option value="volvo" class="selected" disabled>Избери Квартал</option>
+                    <option value="saab">Бояна</option>
+                    <option value="opel">Драгалевци</option>
+                    <option value="audi">Симеоново</option>
+                </select>
+            </div>
+            <div class="tipImot">
+                <select multiple class="fLeft">
+                    <option value="volvo" class="selected" disabled>Тип Имот</option>
+                    <option value="saab">Бояна</option>
+                    <option value="opel">Драгалевци</option>
+                    <option value="audi">Симеоново</option>
+                </select>
+            </div>
+            <div class="broyStai">
+                <select multiple class="fLeft">
+                    <option value="volvo" class="selected" disabled>Брой стаи</option>
+                    <option value="saab">2</option>
+                    <option value="opel">3</option>
+                    <option value="audi">4</option>
+                </select>
+            </div>
+            <a href="#"><input id="searchSubmit" type="submit" value="ТЪРСЕНЕ"></a>
+        </form>
     <!--================================FOOTER=====================================-->
-    <footer></footer>
+    <footer>
+        <div class="footerWrap">
+            <ul class="footerNav fLeft">
+                <li><a href="#">Начало</a></li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Търсене</a></li>
+                <li><a href="#">За нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <div class="footerRightSection fLeft" >
+                <div>
+                    <h1 class="fLeft">Следвай</h1><h2 class="fLeft">Lodge</h2><h3 class="fLeft">Around</h3>
+                </div>
+                <ul class="socialSprite">
+                    <a href="#"><li class="facebook fLeft"></li></a>
+                    <a href="#"><li class="instagram fLeft"></li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

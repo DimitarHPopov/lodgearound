@@ -3,8 +3,10 @@
 	padding:0;
 }
 
-body {
-    background:url(../Content/imgs/houses_back.png) repeat;
+
+
+body{
+    background:url("../imgs/houses_back.png");
     display:block;
 }
 
@@ -188,6 +190,7 @@ body {
 	text-align:center;
 	color:#ffffff;
 	font-size:40px;
+    cursor:default;
 }
 
 .headerContainer h2{
@@ -196,6 +199,7 @@ body {
 	color:#ffffff;
 	font-size:20px;
 	margin-top:50px;
+    cursor:default;
 }
 
 .headerContainer span{
@@ -245,6 +249,7 @@ body {
     width:155px;
     margin:50px auto;
     overflow:hidden;
+    cursor:default;
 }
 
 .mainTitleVhod h1{
@@ -263,6 +268,7 @@ body {
     width:230px;
     margin:50px auto;
     overflow:hidden;
+    cursor:default;
 }
 
 .mainTitleTyrsene h1{
@@ -721,16 +727,17 @@ body {
 	height:40px;
 	padding:5px;
 	margin:20px auto;
-	background:rgba(77,175,110,0.3);
+	background:#ffffff;
 	border:2px solid #4daf6e;
-	color:#ffffff;
+	color:rgba(76,103,161,1);
 	font-family:bg1;
 	font-size:16px;
 	font-weight:bold;
 }
 
 #submitRent:hover{
-	background:rgba(77,175,110,1);
+	color:rgba(76,103,161,0.7);
+    cursor:pointer;
 }
 
 .renterRegButton{
@@ -994,6 +1001,121 @@ body {
 footer {
     background:url(../imgs/footer.jpg) repeat-x;
     height:300px;
+}
+
+.footerWrap {
+    width:480px;
+    height:100px;
+    display:block;
+    margin:0 auto;
+    overflow:hidden;
+    padding-top:100px;
+}
+
+.footerNav {
+    width:138px;
+    text-align:center;
+    border-right:2px solid #ffffff;
+    font-family:bg1;
+    list-style-type:none;
+}
+
+.footerNav a {
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.footerNav li {
+    padding:2px 0;
+}
+
+.footerRightSection {
+    width:340px;
+}
+
+.footerRightSection h1 {
+    font-family:bg1;
+    color:#ffffff;
+    font-size:16px;
+    text-align:center;
+    padding:4px 8px;
+    cursor:default;
+}
+
+.footerRightSection h2 {
+    font-family:lodge;
+    color:#ffa300;
+    font-size:16px;
+    text-align:center;
+    padding:4px 0;
+    cursor:default;
+}
+
+.footerRightSection h3 {
+    font-family:lodge;
+    color:#55b475;
+    font-size:16px;
+    text-align:center;
+    padding:4px 0;
+    cursor:default;
+}
+
+.footerRightSection div{
+    width:200px;
+    display:block;
+    margin:0 auto;
+}
+
+.socialSprite {
+    list-style-type:none;
+    width:129px;
+    margin:0 auto;
+}
+
+.facebook {
+    width:64px;
+    height:64px;
+    display:block;
+    background:url(../imgs/social.png)64px 0;
+    transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    -o-transform:scale(0.5);
+}
+
+.facebook:hover {
+    transform:scale(0.6);
+    -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -o-transform:scale(0.6);
+    cursor:pointer;
+    transition:1s ease;
+    -moz-transition:1s ease;
+    -webkit-transition:1s ease;
+    -o-transition:1s ease;
+}
+
+.instagram {
+    width:64px;
+    height:64px;
+    display:block;
+    background:url(../imgs/social.png)0 0;
+    transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    -o-transform:scale(0.5);
+}
+
+.instagram:hover {
+    transform:scale(0.6);
+    -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -o-transform:scale(0.6);
+    cursor:pointer;
+    transition:1s ease;
+    -moz-transition:1s ease;
+    -webkit-transition:1s ease;
+    -o-transition:1s ease;
 }
 
 #background {
