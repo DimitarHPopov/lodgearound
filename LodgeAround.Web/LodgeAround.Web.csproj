@@ -151,6 +151,7 @@
     <Content Include="Content\imgs\chevron_white_32.png" />
     <Content Include="Content\imgs\facebook.png" />
     <Content Include="Content\imgs\footer.jpg" />
+    <Content Include="Content\imgs\houses_back.png" />
     <Content Include="Content\imgs\ironman.jpg" />
     <Content Include="Content\imgs\ironman2.jpg" />
     <Content Include="Content\imgs\ironman3.jpg" />

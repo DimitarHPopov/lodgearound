@@ -3,6 +3,11 @@
 	padding:0;
 }
 
+body {
+    background:url(../Content/imgs/houses_back.png) repeat;
+    display:block;
+}
+
 .float_right{
     float:right;
 }
