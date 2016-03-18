@@ -105,35 +105,51 @@ nav {
   color: #ffffff;
   font-size: 20px;
   margin-right:10px;
+  display:block;
+  width:20px;
+  height:20px;
 }
 
 .lnr-inbox{
   color: #ffffff;
   font-size: 20px;
   margin-right:10px;
+  display:block;
+  width:20px;
+  height:20px;
 }
 
 .lnr-magnifier{
   color: #ffffff;
   font-size: 20px;
   margin-right:10px;
+  display:block;
+  width:20px;
+  height:20px;
 }
 
 .lnr-heart{
   color: #ffffff;
   font-size: 20px;
   margin-right:10px;
+  display:block;
+  width:20px;
+  height:20px;
 }
 
 .lnr-book{
   color: #ffffff;
   font-size: 20px;
   margin-right:10px;
+  display:block;
+  width:20px;
+  height:20px;
 }
 
 .profileMenu li{
+    height:20px;
 	margin:0 auto;
-	padding:10px 0;
+	padding:20px 0;
 	overflow:hidden;
 }
 
@@ -147,15 +163,13 @@ nav {
 
 .liCont{
 	width:200px;
-	height:32px;
 	margin:0 auto;
 }
 
 .profileMenu li h2{
-    height:40px;
 	font-family:bg1;
 	font-size:16px;
-	padding: 4px 0;
+	padding: 2px 0;
 	color:#ffffff;
 }
 
