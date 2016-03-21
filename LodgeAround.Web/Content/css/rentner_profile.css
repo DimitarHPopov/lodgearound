@@ -225,7 +225,6 @@ nav{
     left:300px;
     top:71px;
     right:0px;
-    bottom:0px;
 	background:#ffffff;
 	font-family:bg1;
 }	
@@ -237,7 +236,7 @@ nav{
 }
 
 .myProfile{
-    width:960px;
+    width:100%;
     color:#000000;
     position:relative;
     background:url(../imgs/color_houses.png);
@@ -246,7 +245,6 @@ nav{
 
 .header1{
   	background:#535353;
-    width:960px;
     overflow:hidden;
 }
 
