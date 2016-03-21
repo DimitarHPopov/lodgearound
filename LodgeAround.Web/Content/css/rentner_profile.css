@@ -88,6 +88,13 @@ nav{
 	width:300px;
 	background:#55b475;
 	overflow:hidden;
+}   
+
+.nav_left{
+    position:absolute;
+    top:71px;
+    left: 0px;
+    width:300px;
 }
 
 .profilePad{
@@ -214,8 +221,11 @@ nav{
 }
 
 .siteWrapper{
-	width:960px;
-	height:1000px;
+    position:absolute;
+    left:300px;
+    top:71px;
+    right:0px;
+    bottom:0px;
 	background:#ffffff;
 	font-family:bg1;
 }	
