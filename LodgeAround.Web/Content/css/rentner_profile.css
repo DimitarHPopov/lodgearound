@@ -11,6 +11,15 @@
 	float:right;
 }
 
+::-webkit-datetime-edit { padding: 1em; }
+::-webkit-datetime-edit-fields-wrapper { background: #ffffff; }
+::-webkit-datetime-edit-text { color: #000000; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: #000000; }
+::-webkit-datetime-edit-day-field { color: #000000; }
+::-webkit-datetime-edit-year-field { color: #000000; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: #ffffff; }
+
 @font-face{
     font-family:bg1;
     src:url(../fonts/BGT65__C.ttf);
@@ -34,8 +43,35 @@ header{
     width:100%;
     height:60px;
     border-bottom:1px solid #ffffff;
+    position:relative;
 }
-nav {
+
+.exitButton {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    padding:5px;
+    cursor:pointer;
+}
+
+.exitButton h2 {
+    font-size:14px;
+    font-family:bg1;
+    color:#ffffff;
+    padding:3px 0;
+}
+
+.lnr-exit{
+  color: #ffffff;
+  font-size: 20px;
+  margin-right:10px;
+  display:block;
+  width:20px;
+  height:20px;
+}
+
+nav{
     width:300px;
 }
 
@@ -45,6 +81,7 @@ nav {
     width:175px;
     height:47px;
     margin:10px auto;
+    cursor:pointer;
 }
 
 .renterProfile{
@@ -90,7 +127,6 @@ nav {
 
 .renterProfile button:hover{
 	cursor:pointer;
-
 }
 
 .renterProfile a{

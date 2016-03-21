@@ -133,23 +133,24 @@ body{
     display:block;
     background:url(../imgs/profPic.jpg);
     border-radius:50%;
-    border:3px solid #ffffff;
-    
-}
-
- .logedProf div:hover{
-    color:rgba(76,103,161,0.7);
+    border:2px solid #ffffff;    
 }
 
 .logedProf h1 {
     font-family:bg1;
     font-size:16px;
     padding:9px 10px;
+    color:#ffffff;
 }
 
-.logedProf:hover{
+.logedProf:hover div{
+    border:2px solid rgba(76,103,161,0.7);
     cursor:pointer;
+}
+
+.logedProf:hover h1 {
     color:rgba(76,103,161,0.7);
+    cursor:pointer;
 }
 
 .lnr-power-switch {
